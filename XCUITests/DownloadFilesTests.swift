@@ -3,23 +3,24 @@ import XCTest
 let testFileName = "Small.zip"
 let testFileSize = "178 bytes"
 let testURL = "http://demo.borland.com/testsite/download_testpage.php"
+let test_url = "test-download.html"
 
 class DownloadFilesTests: BaseTestCase {
 
-    override func tearDown() {
-        // The downloaded file has to be removed between tests
-        waitForExistence(app.tables["DownloadsTable"])
-
-        let list = app.tables["DownloadsTable"].cells.count
-        if list != 0 {
-            for _ in 0...list-1 {
-                waitForExistence(app.tables["DownloadsTable"].cells.element(boundBy: 0))
-                app.tables["DownloadsTable"].cells.element(boundBy: 0).swipeLeft()
-                waitForExistence(app.tables.cells.buttons["Delete"])
-                app.tables.cells.buttons["Delete"].tap()
-            }
-        }
-    }
+//    override func tearDown() {
+//        // The downloaded file has to be removed between tests
+//        waitForExistence(app.tables["DownloadsTable"])
+//
+//        let list = app.tables["DownloadsTable"].cells.count
+//        if list != 0 {
+//            for _ in 0...list-1 {
+//                waitForExistence(app.tables["DownloadsTable"].cells.element(boundBy: 0))
+//                app.tables["DownloadsTable"].cells.element(boundBy: 0).swipeLeft()
+//                waitForExistence(app.tables.cells.buttons["Delete"])
+//                app.tables.cells.buttons["Delete"].tap()
+//            }
+//        }
+//    }
 
     private func deleteItem(itemName: String) {
         app.tables.cells.staticTexts[itemName].swipeLeft()
@@ -169,5 +170,13 @@ class DownloadFilesTests: BaseTestCase {
         app.buttons["Downloads"].tap()
         waitForExistence(app.tables["DownloadsTable"], timeout: 3)
         checkTheNumberOfDownloadedItems(items: 1)
+    }
+    
+    func testDownloadTest() {
+        navigator.openURL(path(forTestPage: test_url))
+        sleep(3)
+        app.buttons["Click Me!"].tap()
+        sleep(3)
+        print(app.debugDescription)
     }
 }
