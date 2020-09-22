@@ -9,14 +9,24 @@ let loremIpsumURL = "\(testPageBase)"
 
 class L10nSuite2SnapshotTests: L10nBaseSnapshotTests {
     func test1DefaultTopSites() {
-        navigator.toggleOff(userState.pocketInNewTab, withAction: Action.TogglePocketInNewTab)
+        
+//      Go to Private mode
+        navigator.goto(SettingsScreen)
+        navigator.goto(DisplaySettings)
+    
+        app.switches["SystemThemeSwitchValue"].tap()
+        
+//        app.cells.staticTexts["Dark"].tap()
+
+        app.cells.staticTexts.element(boundBy: 6).tap()
+//        navigator.toggleOff(userState.pocketInNewTab, withAction: Action.TogglePocketInNewTab)
         navigator.goto(HomePanelsScreen)
         snapshot("DefaultTopSites-01")
-        navigator.toggleOn(userState.pocketInNewTab, withAction: Action.TogglePocketInNewTab)
-        navigator.goto(HomePanelsScreen)
-        snapshot("DefaultTopSites-with-pocket-02")
+//        navigator.toggleOn(userState.pocketInNewTab, withAction: Action.TogglePocketInNewTab)
+//        navigator.goto(HomePanelsScreen)
+//        snapshot("DefaultTopSites-with-pocket-02")
     }
-
+/*
     func test2MenuOnTopSites() {
         navigator.goto(NewTabScreen)
         navigator.goto(BrowserTabMenu)
@@ -37,12 +47,19 @@ class L10nSuite2SnapshotTests: L10nBaseSnapshotTests {
             }
         }
     }
-
+*/
     func test4PrivateBrowsingTabsEmptyState() {
         navigator.toggleOn(userState.isPrivate, withAction: Action.TogglePrivateMode)
-        snapshot("PrivateBrowsingTabsEmptyState-01")
+        snapshot("PrivateBrowsingMode")
+    }
+    
+    func testDefaultSearchEngine() {
+        navigator.goto(SearchSettings)
+        XCTAssert(app.tables.staticTexts["Google"].exists)
+        snapshot("SearchSuggestions")
     }
 
+/*
     func test5PanelsEmptyState() {
         let libraryPanels = [
             "LibraryPanels.History",
@@ -70,16 +87,16 @@ class L10nSuite2SnapshotTests: L10nBaseSnapshotTests {
             snapshot("LongPressTextOptions-02")
         }
     }
-
-    func test7URLBar() {
-        navigator.goto(URLBarOpen)
-        snapshot("URLBar-01")
-
-        userState.url = "moz"
-        navigator.performAction(Action.SetURLByTyping)
-        snapshot("URLBar-02")
-    }
-
+     */
+//    func test7URLBar() {
+//        navigator.goto(URLBarOpen)
+//        snapshot("URLBar-01")
+//
+//        userState.url = "sourdough"
+//        navigator.performAction(Action.SetURLByTyping)
+//        snapshot("URLBar-02")
+//    }
+/*
     func test8URLBarContextMenu() {
         // Long press with nothing on the clipboard
         navigator.goto(URLBarLongPressMenu)
@@ -117,5 +134,5 @@ class L10nSuite2SnapshotTests: L10nBaseSnapshotTests {
         navigator.goto(Intro_FxASignin)
         waitForExistence(app.navigationBars.staticTexts["FxASingin.navBar"])
         snapshot("FxASignInScreen-01")
-    }
+    }*/
 }

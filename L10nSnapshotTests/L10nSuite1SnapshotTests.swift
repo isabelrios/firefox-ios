@@ -10,7 +10,7 @@ class L10nSuite1SnapshotTests: L10nBaseSnapshotTests {
     override var skipIntro: Bool {
         return false
     }
-
+/*
     func testIntro() {
         var num = 1
         allIntroPages.forEach { screenName in
@@ -154,27 +154,56 @@ class L10nSuite1SnapshotTests: L10nBaseSnapshotTests {
         app.cells.element(boundBy: 2).tap()
         snapshot("TrackingProtectionBlockedElements-02")
     }
+     */
+    
+    func test7URLBar() {
+//        navigator.goto("sourdough")
+//        navigator.goto("sourdough recipe")
+//        navigator.goto("sourdough")
+//        navigator.goto("how to make shourdough bread")
+        navigator.openURL("https://www.kingarthurbaking.com/recipes/sourdough-starter-recipe")
+        sleep(2)
+        
+        navigator.openNewURL(urlString: "https://www.thekitchn.com/how-to-make-sourdough-bread-224367")
+        sleep(2)
+        
+        userState.url = "sourdough"
+        navigator.performAction(Action.SetURLByTyping)
+        app.staticTexts["sourdough starter"].tap()
+        
+        sleep(2)
+        navigator.performAction(Action.SetURLByTyping)
+        app.staticTexts["sourdough pizza"].tap()
+        sleep(1)
+        
+        navigator.goto(URLBarOpen)
 
+        userState.url = "sourdough"
+        navigator.performAction(Action.SetURLByTyping)
+        snapshot("URLBar-02")
+    }
+    
+    
     func test9SettingsETP() {
         navigator.goto(TrackingProtectionSettings)
         
        // Check the warning alert
         app.cells["Settings.TrackingProtectionOption.BlockListStrict"].tap()
-
-        snapshot("TrackingProtectionStrictWarning-01")
         app.alerts.buttons.firstMatch.tap()
+        sleep(3)
+        snapshot("TrackingProtectionStrictWarning-01")
         waitForExistence(app.cells["Settings.TrackingProtectionOption.BlockListBasic"])
-        app.cells["Settings.TrackingProtectionOption.BlockListBasic"].buttons.firstMatch.tap()
-        snapshot("TrackingProtectionBasicMoreInfo-01")
-
-        waitForExistence(app.navigationBars["Client.TPAccessoryInfo"])
-        // Go back to TP settings
-        app.navigationBars["Client.TPAccessoryInfo"].buttons.firstMatch.tap()
-
-        // See Strict mode info
-        waitForExistence(app.cells["Settings.TrackingProtectionOption.BlockListStrict"])
-        app.cells["Settings.TrackingProtectionOption.BlockListStrict"].buttons.firstMatch.tap()
-        app.tables.cells.staticTexts.firstMatch.swipeUp()
-        snapshot("TrackingProtectionStrictMoreInfo-02")
+//        app.cells["Settings.TrackingProtectionOption.BlockListBasic"].buttons.firstMatch.tap()
+//        snapshot("TrackingProtectionBasicMoreInfo-01")
+//
+//        waitForExistence(app.navigationBars["Client.TPAccessoryInfo"])
+//        // Go back to TP settings
+//        app.navigationBars["Client.TPAccessoryInfo"].buttons.firstMatch.tap()
+//
+//        // See Strict mode info
+//        waitForExistence(app.cells["Settings.TrackingProtectionOption.BlockListStrict"])
+//        app.cells["Settings.TrackingProtectionOption.BlockListStrict"].buttons.firstMatch.tap()
+//        app.tables.cells.staticTexts.firstMatch.swipeUp()
+//        snapshot("TrackingProtectionStrictMoreInfo-02")
     }
 }
