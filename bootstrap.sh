@@ -11,7 +11,7 @@
 getLocale() {
   echo "Getting locale..."
   rm -rf LocalizationTools
-  git clone https://github.com/mozilla-mobile/LocalizationTools.git || exit 1
+  #git clone https://github.com/mozilla-mobile/LocalizationTools.git || exit 1
 
   echo "Creating firefoxios-l10n Git repo"
   rm -rf firefoxios-l10n
