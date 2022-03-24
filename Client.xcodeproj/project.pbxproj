@@ -2185,6 +2185,22 @@
 		437A857727E43FE100E42764 /* FxAWebViewTelemetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FxAWebViewTelemetry.swift; sourceTree = "<group>"; };
 		437A9B672681256800FB41C1 /* InactiveTabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InactiveTabCell.swift; sourceTree = "<group>"; };
 		437A9B692681257F00FB41C1 /* InactiveTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InactiveTabViewModel.swift; sourceTree = "<group>"; };
+		438EE71A27EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		438EE71B27EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/3DTouchActions.strings; sourceTree = "<group>"; };
+		438EE71C27EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/AuthenticationManager.strings; sourceTree = "<group>"; };
+		438EE71D27EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/ClearHistoryConfirm.strings; sourceTree = "<group>"; };
+		438EE71E27EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/ClearPrivateData.strings; sourceTree = "<group>"; };
+		438EE71F27EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/ClearPrivateDataConfirm.strings; sourceTree = "<group>"; };
+		438EE72027EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/ErrorPages.strings; sourceTree = "<group>"; };
+		438EE72127EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/FindInPage.strings; sourceTree = "<group>"; };
+		438EE72227EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/HistoryPanel.strings; sourceTree = "<group>"; };
+		438EE72327EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/Intro.strings; sourceTree = "<group>"; };
+		438EE72427EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/Localizable.strings; sourceTree = "<group>"; };
+		438EE72527EC66B200792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/LoginManager.strings; sourceTree = "<group>"; };
+		438EE72627EC66B300792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/Menu.strings; sourceTree = "<group>"; };
+		438EE72727EC66B300792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/PrivateBrowsing.strings; sourceTree = "<group>"; };
+		438EE72827EC66B300792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/Shared.strings; sourceTree = "<group>"; };
+		438EE72927EC66B300792DCD /* zgh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zgh; path = zgh.lproj/Today.strings; sourceTree = "<group>"; };
 		43904ED28118BAD713896491 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/HistoryPanel.strings; sourceTree = "<group>"; };
 		4390F7FE246DAFBE00570811 /* FirefoxColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirefoxColors.swift; sourceTree = "<group>"; };
 		439B008A26E6CE2100DFAF14 /* GroupedTabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedTabCell.swift; sourceTree = "<group>"; };
@@ -7814,6 +7830,7 @@
 				gd,
 				tt,
 				"en-US",
+				zgh,
 			);
 			mainGroup = F84B21B51A090F8100AAB793;
 			packageReferences = (
@@ -9584,6 +9601,7 @@
 				62DF49B9976D5863CADF6EAA /* ca */,
 				25404EFD8E59C9EBCF4AFBBE /* gd */,
 				967AF164275FF4C70099E161 /* tt */,
+				438EE72627EC66B300792DCD /* zgh */,
 			);
 			name = Menu.strings;
 			sourceTree = "<group>";
@@ -9681,6 +9699,7 @@
 				F013431EA44E12FB0FCFF807 /* ca */,
 				F0F74D48BA3563210D53E2A4 /* gd */,
 				967AF167275FF4C70099E161 /* tt */,
+				438EE72827EC66B300792DCD /* zgh */,
 			);
 			name = Shared.strings;
 			sourceTree = "<group>";
@@ -9762,6 +9781,7 @@
 				DF46B9A32755297000657F75 /* ne-NP */,
 				967AF169275FF4C70099E161 /* tt */,
 				8A99DB9827C6DD3E007EA6BD /* is */,
+				438EE72927EC66B300792DCD /* zgh */,
 			);
 			name = Today.strings;
 			sourceTree = "<group>";
@@ -9861,6 +9881,7 @@
 				460B4C81BC2444F2F06702D6 /* ca */,
 				54D046DA913D533F26A8E3AC /* gd */,
 				967AF159275FF4C60099E161 /* tt */,
+				438EE71C27EC66B200792DCD /* zgh */,
 			);
 			name = AuthenticationManager.strings;
 			sourceTree = "<group>";
@@ -9961,6 +9982,7 @@
 				126A40A4A5AFDFD655B0FDF4 /* ca */,
 				ACCB429B86B8D1BC8BF2FDE0 /* gd */,
 				967AF15A275FF4C60099E161 /* tt */,
+				438EE71D27EC66B200792DCD /* zgh */,
 			);
 			name = ClearHistoryConfirm.strings;
 			sourceTree = "<group>";
@@ -10060,6 +10082,7 @@
 				E7C4451C8940941CAEB33DED /* gd */,
 				D5311CB2261FC9F400A2FC94 /* ast */,
 				967AF158275FF4C60099E161 /* tt */,
+				438EE71B27EC66B200792DCD /* zgh */,
 			);
 			name = 3DTouchActions.strings;
 			sourceTree = "<group>";
@@ -10159,6 +10182,7 @@
 				5FE34931820AAF71C31C383E /* ca */,
 				9C8043F3BB77DF533FF48412 /* gd */,
 				967AF15B275FF4C70099E161 /* tt */,
+				438EE71E27EC66B200792DCD /* zgh */,
 			);
 			name = ClearPrivateData.strings;
 			sourceTree = "<group>";
@@ -10257,6 +10281,7 @@
 				CF634CC3A39BA96DE19D497A /* ca */,
 				E8BE4A4597EDD74CD5B3A8D5 /* gd */,
 				967AF160275FF4C70099E161 /* tt */,
+				438EE72227EC66B200792DCD /* zgh */,
 			);
 			name = HistoryPanel.strings;
 			sourceTree = "<group>";
@@ -10357,6 +10382,7 @@
 				1C9741FFBED06E49F8B5F64F /* ca */,
 				0FD346178E1DE90491548540 /* gd */,
 				967AF162275FF4C70099E161 /* tt */,
+				438EE72427EC66B200792DCD /* zgh */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -10458,6 +10484,7 @@
 				51614CF895A46ADD3C81ACC1 /* gd */,
 				967AF157275FF4C60099E161 /* tt */,
 				96A6ACD4276BDD8D00087A51 /* en-US */,
+				438EE71A27EC66B200792DCD /* zgh */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -10556,6 +10583,7 @@
 				5B7A4C3C85CE0BB43E25B018 /* ca */,
 				10844A96ACD90B58C90F247E /* gd */,
 				967AF165275FF4C70099E161 /* tt */,
+				438EE72727EC66B300792DCD /* zgh */,
 			);
 			name = PrivateBrowsing.strings;
 			sourceTree = "<group>";
@@ -10655,6 +10683,7 @@
 				546F4E7DA6D98552425B3F9B /* ca */,
 				0E524676A2657BD8147C072A /* gd */,
 				967AF15E275FF4C70099E161 /* tt */,
+				438EE72027EC66B200792DCD /* zgh */,
 			);
 			name = ErrorPages.strings;
 			sourceTree = "<group>";
@@ -10932,6 +10961,7 @@
 				7EDC48EDAD21358996E3971E /* ca */,
 				57F145E2AD7AF2643AD94B98 /* gd */,
 				967AF161275FF4C70099E161 /* tt */,
+				438EE72327EC66B200792DCD /* zgh */,
 			);
 			name = Intro.strings;
 			sourceTree = "<group>";
@@ -11030,6 +11060,7 @@
 				28364DEE903FF42ED740A978 /* ca */,
 				9A444D57B233A146581D56F5 /* gd */,
 				967AF163275FF4C70099E161 /* tt */,
+				438EE72527EC66B200792DCD /* zgh */,
 			);
 			name = LoginManager.strings;
 			sourceTree = "<group>";
@@ -11226,6 +11257,7 @@
 				DCE149E4A889E70038840A11 /* ca */,
 				31654B22BF8241FC6F4B2B78 /* gd */,
 				967AF15F275FF4C70099E161 /* tt */,
+				438EE72127EC66B200792DCD /* zgh */,
 			);
 			name = FindInPage.strings;
 			sourceTree = "<group>";
@@ -11618,6 +11650,7 @@
 				383D47EEAB4E12E6B657C8CB /* ca */,
 				1C0D49279DC88F974E4BE1CB /* gd */,
 				967AF15C275FF4C70099E161 /* tt */,
+				438EE71F27EC66B200792DCD /* zgh */,
 			);
 			name = ClearPrivateDataConfirm.strings;
 			sourceTree = "<group>";
