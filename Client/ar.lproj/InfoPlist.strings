@@ -4,7 +4,7 @@
 /* Privacy - Face ID Usage Description */
 "NSFaceIDUsageDescription" = "يطلب Firefox تفعيل Face ID للوصول إلى جلسات الولوج المحفوظة لديك.";
 
-/* Privacy - Location When In Use Usage Description */
+/* file, You can obtain one at http://mozilla.org/MPL/2.0 */
 "NSLocationWhenInUseUsageDescription" = "يمكن أن تطلب منك المواقع التي تزورها معرفة مكانك.";
 
 /* Privacy - Microphone Usage Description */
