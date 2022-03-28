@@ -1,7 +1,7 @@
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "Isto permítelle facer fotos e subilas.";
 
-/* Privacy - Location When In Use Usage Description */
+/* file, You can obtain one at http://mozilla.org/MPL/2.0 */
 "NSLocationWhenInUseUsageDescription" = "Os sitios web que visita poden solicitar a súa localización.";
 
 /* Privacy - Microphone Usage Description */
