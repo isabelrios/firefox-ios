@@ -731,7 +731,7 @@
 "Keyboard.Shortcuts.OpenLinkInNewTab" = "Ldi aseɣwen deg iccer amaynut";
 
 /* A label indicating the keyboard shortcut of saving the current web page in a format of the user's choice. This label is displayed in the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
-"Keyboard.Shortcuts.SavePageAs" = "Sekles asebter am...";
+"Keyboard.Shortcuts.SavePageAs" = "Sekles asebter am…";
 
 /* A label indicating a grouping of related keyboard shortcuts describing actions a user can do with Bookmarks. This label is displayed inside the Discoverability overlay when a user presses the Command key. The Discoverability overlay and shortcut become available only when a user has connected a hardware keyboard to an iPad. See https://drive.google.com/file/d/1gH3tbvDceg7yG5N67NIHS-AXgDgCzBHN/view?usp=sharing for more details. */
 "Keyboard.Shortcuts.Section.Bookmark" = "Ticraḍ n yisebtar";
@@ -1345,9 +1345,6 @@
 
 /* Text of the prompt user to setup the camera authorization. */
 "ScanQRCode.PermissionError.Message" = "Ttxilek sireg Firefox ad ikcem ɣer tkamiṛat n ubnek-inek deg 'iɣewwaṛen' -> 'Tabaḍnit' -> 'Takamiṛat'.";
-
-/* Text of the prompt to setup the camera authorization for the Scan QR Code feature. */
-"ScanQRCode.PermissionError.Message.v99" = "Rzu ɣer 'Iɣewwaṛen' n yibenk > 'Firefox.' Sireg Firefox akken ad yekcem ɣer tkamirat.";
 
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Semḍen Tangalt QR";

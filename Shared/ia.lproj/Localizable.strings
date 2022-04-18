@@ -554,7 +554,7 @@
 "FxAPush_DeviceDisconnected_UnknownDevice_body" = "Un apparato se ha disconnectite de Firefox Sync";
 
 /* On the firefox homepage, the string read by the voice over prompt for accessibility, for the button which changes the wallpaper */
-"FxHomepage.Wallpaper.ButtonLabel.v99" = "Firefox logo, cambia le fundo.";
+"FxHomepage.Wallpaper.ButtonLabel.v99" = "Logo de Firefox, cambia le fundo.";
 
 /* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
 "Get your open tabs, bookmarks, and passwords from your other devices." = "Obtene le schedas aperte, le marcapaginas e le contrasignos de tu altere apparatos.";
@@ -872,7 +872,7 @@
 "LoginsHelper.PromptSavePassword.Title" = "Salvar le contrasigno pro %@?";
 
 /* Prompt for updating a login. The first parameter is the hostname for which the password will be updated for. */
-"LoginsHelper.PromptUpdateLogin.Title.OneArg" = "Actualisar le credentiales pro %2$@?";
+"LoginsHelper.PromptUpdateLogin.Title.OneArg" = "Actualisar le credentiales pro %@?";
 
 /* Prompt for updating a login. The first parameter is the username for which the password will be updated for. The second parameter is the hostname of the site. */
 "LoginsHelper.PromptUpdateLogin.Title.TwoArg" = "Actualisar le credential %1$@ pro %2$@?";
@@ -952,7 +952,7 @@
 "Menu.AddToReadingList.Confirm" = "Addite al lista de lectura";
 
 /* Label for the add to shortcuts button in the menu. Pressing this button pins the current website as a shortcut on the home page. */
-"Menu.AddToShortcuts.v99" = "Adder al vias breve";
+"Menu.AddToShortcuts.v99" = "Adder al accessos directe";
 
 /* Label for the button, displayed in the menu, takes you to to bookmarks screen when pressed. */
 "Menu.Bookmarks.Label" = "Marcapaginas";
@@ -1045,13 +1045,13 @@
 "Menu.RemovePin.Confirm" = "Removite del sitos preferite";
 
 /* Toast displayed to the user after removing the item to the Shortcuts. */
-"Menu.RemovePin.Confirm2.v99" = "Removite ex vias breve";
+"Menu.RemovePin.Confirm2.v99" = "Removite del accessos directe";
 
 /* Long label for the remove from reading list button in the menu. Pressing this button removes the current page from the reading list. */
-"Menu.RemoveReadingList.AlternateLabel.v99" = "Remover ex le lista de lectura";
+"Menu.RemoveReadingList.AlternateLabel.v99" = "Remover del lista de lectura";
 
 /* Toast displayed to confirm to the user that his reading list item was correctly removed. */
-"Menu.RemoveReadingList.Confirm.v99" = "Removite ex le lista de lectura";
+"Menu.RemoveReadingList.Confirm.v99" = "Removite del lista de lectura";
 
 /* Label for the remove from reading list button in the menu. Pressing this button removes the current page from the reading list. Please keep the text as short as possible for this label. */
 "Menu.RemoveReadingList.Label.v99" = "Remover";
@@ -1069,7 +1069,7 @@
 "Menu.Toolbar.Bookmarks.AccessibilityLabel.v99" = "Marcapaginas";
 
 /* Accessibility label for the Home button on the toolbar. Pressing this button brings the user to the home page. */
-"Menu.Toolbar.Home.AccessibilityLabel.v99" = "A casa";
+"Menu.Toolbar.Home.AccessibilityLabel.v99" = "Initio";
 
 /* Title on tracking protection menu for blocked items. */
 "Menu.TrackingProtection.BlockedTitle" = "Blocate";
@@ -1346,9 +1346,6 @@
 /* Text of the prompt user to setup the camera authorization. */
 "ScanQRCode.PermissionError.Message" = "Per favor permitte a Firefox de acceder al camera de tu apparato in ‘Parametros’ -> ‘Confidentialitate’ -> ‘Camera’.";
 
-/* Text of the prompt to setup the camera authorization for the Scan QR Code feature. */
-"ScanQRCode.PermissionError.Message.v99" = "Ir a ‘Parametros’ > ‘Firefox’ del apparato. Permitte al Firefox de acceder le camera.";
-
 /* Title for the QR code scanner view. */
 "ScanQRCode.View.Title" = "Scannar codice QR";
 
@@ -1624,7 +1621,7 @@
 "Settings.Home.Option.RecentlyVisited" = "Visitate recentemente";
 
 /* In the settings menu, in the Firefox homepage customization section, this is the title for the option that allows users to toggle Shortcuts section on the Firefox homepage on or off */
-"Settings.Home.Option.Shortcuts" = "Vias breve";
+"Settings.Home.Option.Shortcuts" = "Accessos directe";
 
 /* In the settings menu, on the Start at Home homepage customization option, this allows users to set this setting to return to the Homepage after four hours of inactivity. */
 "Settings.Home.Option.StartAtHome.AfterFourHours" = "Pagina initial post 4 horas de inactivitate";
@@ -1648,16 +1645,16 @@
 "Settings.Home.Option.Wallpaper" = "Fundo";
 
 /* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the amethyst firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "Fundo de Firefox, modello amethysto.";
+"Settings.Home.Option.Wallpaper.Accessibility.AmethystWallpaper.v99" = "Fundo de Firefox, motivo amethysto.";
 
 /* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the cerulean firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "Fundo de Firefox, modello cerulee.";
+"Settings.Home.Option.Wallpaper.Accessibility.CeruleanWallpaper.v99" = "Fundo de Firefox, motivo cerulee.";
 
 /* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string for the default wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.DefaultWallpaper.v99" = "Fundo de Firefox, modello cerulee.";
+"Settings.Home.Option.Wallpaper.Accessibility.DefaultWallpaper.v99" = "Fundo clar predefinite.";
 
 /* In the settings menu, on the Firefox wallpaper customization screen, this is the title accessibility string for the sunrise firefox wallpaper. */
-"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Fundo de Firefox, modello sol levante.";
+"Settings.Home.Option.Wallpaper.Accessibility.SunriseWallpaper.v99" = "Fundo de Firefox, motivo de sol levante.";
 
 /* In the settings menu, on the Firefox wallpaper customization screen, this is the accessibility string of the toggle for turning wallpaper cycling shortcut on or off on the homepage. */
 "Settings.Home.Option.Wallpaper.Accessibility.ToggleButton" = "Pagina principal button pro recyclar le fundos";
