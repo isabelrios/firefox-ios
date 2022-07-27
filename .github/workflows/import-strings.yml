@@ -1,7 +1,5 @@
 name: Create a PR with changes after importing strings
-on:
-  schedule:
-    - cron: '0 11 * * 1'
+on: workflow_dispatch
 
 jobs:
   build:
@@ -10,7 +8,7 @@ jobs:
       max-parallel: 4
       matrix:
         python-version: [3.9]
-        xcode: ["13.0"]
+        xcode: ["13.4"]
     steps:
     - uses: actions/checkout@v2
       with:
