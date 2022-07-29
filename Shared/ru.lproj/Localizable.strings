@@ -826,6 +826,9 @@
 /* Within the History Panel, users can open an action menu to clear recent history. */
 "LibraryPanel.History.ClearHistoryMenuTitle.v100" = "Удаляет историю (включая историю с других устройств), куки и другие данные просмотра.";
 
+/* Within the history panel, a user can navigate into a screen with only grouped history items. Within that screen, a user can now swipe to delete a single item in the list. This label informs the user of a deletion action on the item. */
+"LibraryPanel.History.DeleteGroupedItem.v104" = "Удалить";
+
 /* In the history panel, users will be able to search terms in their browsing history. This label is shown when there is no results after querying the search terms in the user's history. */
 "LibraryPanel.History.NoHistoryFound.v99" = "История не найдена";
 
