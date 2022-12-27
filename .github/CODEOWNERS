@@ -15,8 +15,4 @@
 # to their GitHub account, for example user@example.com.
 # https://help.github.com/articles/about-codeowners/
 
-
-# By default the Focus iOS Engineering team will be the owner for everything
-# in the repo. Unless a later match takes precedence.
-
 * @isabelrios @irios3
