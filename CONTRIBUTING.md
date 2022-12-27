@@ -1,4 +1,4 @@
-## Contributor guidelines
+## Contributor guidelin
 We'd love for you to contribute to this repository. Before you start, we'd like you to take a look and follow these guidelines:
   - [Submitting an Issue](#submitting-an-issue)
   - [Creating a pull request](#creating-a-pull-request)
