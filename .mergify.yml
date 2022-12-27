@@ -30,5 +30,5 @@ pull_request_rules:
       - label!=Do Not Land
     actions:
       queue:
-        method: merge
+        method: squash
         name: default
