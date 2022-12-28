@@ -5,7 +5,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 #
-# Use the --force to force a re-build locales.
+# Use the --force option to force a re-build locales.
 # Use the --importLocales option to fetch and update locales only
 
 getLocale() {
