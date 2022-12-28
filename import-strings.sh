@@ -1,5 +1,5 @@
 
-echo "\n\n[*] Building tools/Localizations"
+echo "\n\n[*] Building /Localizations"
 (cd LocalizationTools && swift build)
 
 echo "\n\n[*] Importing Strings - takes a minute. (output in import-strings.log)"
@@ -8,4 +8,4 @@ echo "\n\n[*] Importing Strings - takes a minute. (output in import-strings.log)
   --project-path "$PWD/../Client.xcodeproj" \
   --l10n-project-path "$PWD/../firefoxios-l10n") > import-strings.log 2>&1
 
-echo "\n\n[!] Strings have been imported. You can now create a PR."
+echo "\n\n[!] Strings  been imported. You can now create a PR."
