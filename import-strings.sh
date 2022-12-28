@@ -1,5 +1,5 @@
 
-echo "\n\n[*] Building tools/Localizations"
+echo "\n\n[*] Building /Localizations"
 (cd LocalizationTools && swift build)
 
 echo "\n\n[*] Importing Strings - takes a minute. (output in import-strings.log)"
