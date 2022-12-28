@@ -4,7 +4,7 @@ project_type: ios
 pipelines:
   pipeline_multiple_shards:
     stages:
-    - stage_1: {}
+    #- stage_1: {}
     - stage_2: {}
 stages:
   stage_1:
