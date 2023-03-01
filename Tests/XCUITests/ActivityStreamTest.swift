@@ -4,7 +4,6 @@
 
 import XCTest
 
-
 let defaultTopSite = ["topSiteLabel": "Wikipedia", "bookmarkLabel": "Wikipedia"]
 let newTopSite = ["url": "www.mozilla.org", "topSiteLabel": "Mozilla", "bookmarkLabel": "Internet for people, not profit — Mozilla"]
 let allDefaultTopSites = ["Facebook", "YouTube", "Amazon", "Wikipedia", "Twitter"]
