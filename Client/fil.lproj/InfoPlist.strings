@@ -1,6 +1,9 @@
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "Firefox uses your camera to scan QR codes and take photos and video.";
 
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "Kinakailangan ng Firefox ang Face ID upang ma-access ang iyong mga nai-save na login.";
+
 /* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Maaaring hingiin ang iyong lokasyon ng binibisitang website";
 
@@ -9,13 +12,4 @@
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Pinapayagan ka nito na i-save ang mga larawan.";
-
-/* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Bagong Private Tab";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Bagong Tab";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "I-scan ang QR Code";
 
