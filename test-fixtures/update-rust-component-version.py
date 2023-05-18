@@ -1,4 +1,5 @@
 import json
+import logging
 import requests
 import re
 from github import Github
@@ -30,9 +31,9 @@ def read_rust_components_tag_version(SPM_PACKAGE):
                 if i["identity"] == "rust-components-swift":
                     return i["state"]["version"], i["state"]["revision"]
     except (FileNotFoundError, json.JSONDecodeError) as e:
-        print(f"Error reading rust component tag: {e}")
+        log.info(f"Error reading rust component tag: {e}")
     except Exception as e:
-        print(f"Unexpected error: {e}")
+        log.info(f"Unexpected error: {e}")
     return None, None
 
 
@@ -42,7 +43,7 @@ def read_project_min_version(FIREFOX_PROJECT, RUST_COMPONENTS_ID):
         project = XcodeProject.load(FIREFOX_PROJECT)
         return project.get_object(RUST_COMPONENTS_ID).requirement.version
     except Exception as e:
-        print(f"Error reading project minimum version: {e}")
+        log.info(f"Error reading project minimum version: {e}")
         return None
 
 # Compare version strings to determine if we need to update current version
@@ -60,7 +61,7 @@ def update_file(current_tag, current_commit, rust_component_repo_tag, rust_compo
             file.seek(0)
             file.write(data)
     except (FileNotFoundError, IOError) as e:
-        print(f"Error updating file: {e}")
+        log.info(f"Error updating file: {e}")
 
 
 def main():
