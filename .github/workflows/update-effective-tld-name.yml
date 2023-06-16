@@ -36,6 +36,7 @@ jobs:
         files_diff=$(cmp --silent $file_in_repo $file_in_repo && echo '### SUCCESS: Files Are Identical! ###' || echo '### WARNING: Files Are Different! ###')
 
         echo $files_diff
+        echo "current_date=$current_date" >> $GITHUB_ENV
 
         if [[ "$files_diff" == *"Different"* ]]; then
           echo "Files are different"
