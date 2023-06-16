@@ -40,8 +40,8 @@ jobs:
         if [[ "$comparison" == *"Different"* ]]; then
           echo "Files are different"
           cp tmp.dat Shared/effective_tld_names.dat
-          echo "pr_title=Changes in effective_tld_names file" >> $GITHUB_ENV
-          echo "branch_name=Refactor [vXXX] Update effective_tld_names file $current_date" >> $GITHUB_ENV
+          echo "branch_name=refactor-update-effective-tld-names" >> $GITHUB_ENV
+          echo "pr_title=Refactor [vXXX] Update effective_tld_names file $current_date" >> $GITHUB_ENV
           echo "pr_body=This automated PR updates the effective_tld_names file"
           rm tmp.dat
         fi
