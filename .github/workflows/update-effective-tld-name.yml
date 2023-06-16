@@ -31,7 +31,7 @@ jobs:
 
         curl -o tmp.dat  "https://raw.githubusercontent.com/publicsuffix/list/master/public_suffix_list.dat"
 
-        file_in_repo=firefox-ios/Shared/effective_tld_names.dat
+        file_in_repo=Shared/effective_tld_names.dat
 
         files_diff=$(cmp --silent $file_in_repo $file_in_repo && echo '### SUCCESS: Files Are Identical! ###' || echo '### WARNING: Files Are Different! ###')
 
@@ -40,8 +40,8 @@ jobs:
         if [[ "$files_diff" == *"Different"* ]]; then
           echo "Files are different"
           cp tmp.dat Shared/effective_tld_names.dat
-          echo "branch_name=refactor-update-effective-tld-names" >> $GITHUB_ENV
-          echo "pr_title=Refactor [vXXX] Update effective_tld_names file $current_date" >> $GITHUB_ENV
+          echo "branch_name=refactor-update-effective-tld-names-test" >> $GITHUB_ENV
+          echo "pr_title=Refactor [vXXX] Update effective_tld_names file $current_date test" >> $GITHUB_ENV
           echo "pr_body=This automated PR updates the effective_tld_names file"
           rm tmp.dat
         fi
