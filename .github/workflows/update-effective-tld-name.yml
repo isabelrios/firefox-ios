@@ -48,7 +48,7 @@ jobs:
           rm tmp.dat
         fi
     - name: Update Existing File
-      if: env.create_pr == 'true'
+      if: ${{ env.create_pr }}
       run: |-
         git diff || (git add Shared/effective_tld_names.dat)
     - name: Create Pull Request
