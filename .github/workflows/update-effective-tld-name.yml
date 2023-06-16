@@ -33,13 +33,14 @@ jobs:
 
         file_in_repo=Shared/effective_tld_names.dat
 
-        files_diff=$(cmp --silent tmp.dat $file_in_repo && echo '### SUCCESS: Files Are Identical! ###' || echo '### WARNING: Files Are Different! ###')
+        files_diff=$(cmp --silent $file_in_repo $file_in_repo && echo '### SUCCESS: Files Are Identical! ###' || echo '### WARNING: Files Are Different! ###')
 
         echo $files_diff
         echo "current_date=$current_date" >> $GITHUB_ENV
 
         if [[ "$files_diff" == *"Different"* ]]; then
           echo "Files are different"
+          echo "create_pr=true" >> $GITHUB_ENV
           cp tmp.dat Shared/effective_tld_names.dat
           echo "branch_name=refactor-update-effective-tld-names-test" >> $GITHUB_ENV
           echo "pr_title=Refactor [vXXX] Update effective_tld_names file test" >> $GITHUB_ENV
@@ -47,9 +48,11 @@ jobs:
           rm tmp.dat
         fi
     - name: Update Existing File
+      if: env.create_pr == 'true'
       run: |-
         git diff || (git add Shared/effective_tld_names.dat)
     - name: Create Pull Request
+      if: env.create_pr == 'true'
       uses: peter-evans/create-pull-request@v3
       with:
         author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
