@@ -215,11 +215,12 @@ class SaveLoginTest: BaseTestCase {
         closeURLBar()
         navigator.goto(LoginsSettings)
         // This only appears the first time
-        sleep(2)
+        sleep(3)
         unlockLoginsView()
         if app.otherElements.buttons["Continue"].exists {
             app.otherElements.buttons["Continue"].tap()
         }
+        waitForNoExistence(app.otherElements.buttons["Continue"])
         waitForExistence(app.tables["Login List"], timeout: 15)
         app.buttons["Add"].tap()
         waitForExistence(app.tables["Add Credential"], timeout: 15)
