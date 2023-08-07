@@ -1,9 +1,6 @@
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "საშუალებას გაძლევთ, სურათის გადაღებისა და ატვირთვის.";
 
-/* Privacy - Face ID Usage Description */
-"NSFaceIDUsageDescription" = "Firefox საჭიროებს Face ID-ს შენახულ ანგარიშებთან წვდომისთვის.";
-
 /* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "ვებსაიტებმა, შესაძლოა მოითხოვოს თქვენი მდებარეობის მონაცემები.";
 
@@ -12,13 +9,4 @@
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "სურათების შენახვის საშუალებას იძლევა.";
-
-/* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "ახალი პირადი ჩანართი";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "ახალი ჩანართი";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "QR კოდის წაკითხვა";
 
