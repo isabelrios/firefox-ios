@@ -10,12 +10,3 @@
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "This lets you save photos.";
 
-/* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Yangi maxfiy ichki oyna";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Yangi ichki oyna";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "Scan QR Code";
-
