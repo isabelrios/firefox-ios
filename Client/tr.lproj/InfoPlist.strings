@@ -1,9 +1,6 @@
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "Firefox, QR kodlarını taramak, fotoğraf ve video çekmek için kameranızı kullanır.";
 
-/* Privacy - Face ID Usage Description */
-"NSFaceIDUsageDescription" = "Firefox, kayıtlı hesaplarınıza erişmek için Face ID gerektirir.";
-
 /* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Ziyaret ettiğiniz web siteleri konumunuzu isteyebilir.";
 
@@ -12,13 +9,4 @@
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Fotoğraf kaydetmenize olanak sağlar.";
-
-/* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Yeni gizli sekme";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Yeni sekme";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "QR kodu tara";
 
