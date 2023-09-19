@@ -705,7 +705,7 @@ workflows:
     description: This Workflow is to build the app using latest xcode available in Bitrise
     meta:
       bitrise.io:
-        stack: osx-xcode-13.4.x
+        stack: osx-xcode-15.0.x
         machine_type_id: g2.4core
   RunAllXCUITests:
     steps: []
