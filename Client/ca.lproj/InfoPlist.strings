@@ -1,9 +1,6 @@
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "El Firefox usa la càmera per a escanejar codis QR i fer fotos i vídeos.";
 
-/* Privacy - Face ID Usage Description */
-"NSFaceIDUsageDescription" = "El Firefox necessita el Face ID per accedir als vostres inicis de sessió desats.";
-
 /* Privacy - Location When In Use Usage Description */
 "NSLocationWhenInUseUsageDescription" = "Els llocs web que visiteu poden sol·licitar la vostra ubicació.";
 
@@ -12,13 +9,4 @@
 
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "Això permet desar fotos.";
-
-/* (No Comment) */
-"ShortcutItemTitleNewPrivateTab" = "Pestanya privada nova";
-
-/* (No Comment) */
-"ShortcutItemTitleNewTab" = "Pestanya nova";
-
-/* (No Comment) */
-"ShortcutItemTitleQRCode" = "Escaneja un codi QR";
 
