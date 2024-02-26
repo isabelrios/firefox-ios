@@ -1,6 +1,9 @@
 /* The title of the button on the Default Browser Popup, which is a card with instructions telling the user how to set Firefox as their default browser. */
 "DefaultBrowserPopup.ButtonTitle.v114" = "Odpri nastavitve";
 
+/* The footer label on the Default Browser Popup, which is below all the instructions asking the users if their Firefox browser is the default browser. If it is then close this message and tap skip. The *text inside asterisks* denotes part of the string to bold, please leave the text inside the '*' so that it is bolded correctly. */
+"DefaultBrowserPopup.DescriptionFooter.v124" = "*Je %@ že privzet?* Zaprite to sporočilo in tapnite Preskoči.";
+
 /* The first label on the Default Browser Popup, which is a card with instructions telling the user how to set Firefox as their default browser. The *text inside asterisks* denotes part of the string to bold, please leave the text inside the '*' so that it is bolded correctly. */
 "DefaultBrowserPopup.FirstLabel.v114" = "1. Odprite *nastavitve*";
 
@@ -12,6 +15,9 @@
 
 /* The title on the Default Browser Popup, which is a card with instructions telling the user how to set Firefox as their default browser. */
 "DefaultBrowserPopup.Title.v114" = "Zamenjajte privzeti brskalnik";
+
+/* String used to describe the option to continue to the next onboarding card in Firefox Onboarding screens. Placeholder is for the app name. */
+"Onboarding.Customization.Intro.Continue.Action.v123" = "Prilagodi %@";
 
 /* String used to describe the option to skip the customization cards in Firefox Onboarding screens and start browsing. */
 "Onboarding.Customization.Intro.Skip.Action.v123" = "Začnite brskati";
