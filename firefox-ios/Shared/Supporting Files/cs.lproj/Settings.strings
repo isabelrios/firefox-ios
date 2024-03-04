@@ -1,3 +1,6 @@
+/* Displayed inside the keyboard hint when a user is entering their address and has at least one saved address. Indicates that there are stored addresses available for use in filling out a form. */
+"Addresses.Settings.UseSavedAddressFromKeyboard.v124" = "Použít uloženou adresu";
+
 /* Accessibility label for the add button in autofill settings screen. Pressing this button presents a modal that allows users to add a card by entering the credit card information. */
 "CreditCard.Settings.AddCard.AccessibilityLabel.v121" = "Přidat kartu";
 
@@ -99,6 +102,9 @@
 
 /* Title for the `default search engine` settings section in the Search page in the Settings menu. */
 "Settings.Search.DefaultSearchEngine.Title.v121" = "Výchozí vyhledávač";
+
+/* Title for the `Suggestions from Search Engines` settings section in the Search page in the Settings menu. */
+"Settings.Search.EnginesSuggestions.Title.v124" = "Našeptávání z vyhledávačů";
 
 /* Navigation title for search page in the Settings menu. */
 "Settings.Search.PageTitle.v121" = "Vyhledávání";
