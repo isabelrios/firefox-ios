@@ -34,19 +34,19 @@ def get_newest_rust_components_version(GITHUB_REPO):
 # Read the current version and commit of the Rust components from the SPM package file
 def read_rust_components_tag_version(SPM_PACKAGE):
     try:
-        logging.info("here")
         with open(SPM_PACKAGE) as f:
             data = json.load(f)
-            if SPM_PACKAGE == FOCUS_SPM_PACKAGE: 
-                data = data["object"]   
+            if SPM_PACKAGE == FOCUS_SPM_PACKAGE:
+                data = data["object"]
             for i in data["pins"]:
                 if SPM_PACKAGE == FOCUS_SPM_PACKAGE:
                     if i["package"] == "MozillaRustComponentsSwift":
-                        return i["state"]["version"], i["state"]["revision"]
+                        state_values = i["state"]["version"], i["state"]["revision"]
                 else:
                     if i["identity"] == "rust-components-swift":
-                        return i["state"]["version"], i["state"]["revision"]
-            
+                        state_values = i["state"]["version"], i["state"]["revision"]
+            return state_values
+
     except (FileNotFoundError, json.JSONDecodeError) as e:
         logging.info(f"Error reading rust component tag: {e}")
     except Exception as e:
@@ -57,7 +57,6 @@ def read_rust_components_tag_version(SPM_PACKAGE):
 def read_project_min_version(PROJECT, RUST_COMPONENTS_ID):
     try:
         project = XcodeProject.load(PROJECT)
-        logging.info(f"focus: {project.get_object(RUST_COMPONENTS_ID).requirement.version}")
         return project.get_object(RUST_COMPONENTS_ID).requirement.version
     except Exception as e:
         logging.info(f"Error reading project minimum version: {e}")
