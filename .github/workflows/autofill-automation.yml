@@ -1,7 +1,7 @@
 name: Build and Run Autofill Automation
 permissions: read-all
 on:
-    pull_request: []
+    pull_request:
       paths:
         - './github/workflows/**'
     #workflow_dispatch: []
