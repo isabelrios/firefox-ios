@@ -1,0 +1,39 @@
+name: Build and Run Autofill Automation
+permissions: read-all
+on:
+    pull_request:
+      paths:
+        - './github/workflows/autofill-automation.yml'
+    #workflow_dispatch: []
+jobs:
+  build:
+    runs-on: macos-13
+    timeout-minutes: 60
+    strategy:
+      matrix:
+        python-version: [3.9]
+        xcode: ["15.2"]
+    steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+
+        - name: Clone repository
+          run: |
+            git clone https://github.com/issammani/test-playwright.git
+        - name: Install node
+          uses: actions/setup-node@v4
+          with:
+           node-version: 18
+        - run: |
+            echo "Install dependencies and run tests"
+            npm i
+            npm install --save concurrently
+            npm i -D @playwright/test
+            
+            pwd
+            cd test-playwright
+            echo "install playwright"
+            npx playwright install
+            
+            echo "now run tests"
+            npm test
