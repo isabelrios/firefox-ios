@@ -3,7 +3,7 @@ permissions: read-all
 on:
     pull_request:
       paths:
-        - './github/workflows/autofill-automation.yml'
+        - '.github/workflows/autofill-automation.yml'
     #workflow_dispatch: []
 jobs:
   build:
