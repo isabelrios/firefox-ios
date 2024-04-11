@@ -2,9 +2,9 @@ name: Build and Run Autofill Automation
 permissions: read-all
 on:
     pull_request: []
-      #paths:
-      #- '.'
-    workflow_dispatch: []
+      paths:
+        - '.'
+    #workflow_dispatch: []
 jobs:
   build:
     runs-on: macos-13
