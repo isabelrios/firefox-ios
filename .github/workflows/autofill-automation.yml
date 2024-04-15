@@ -6,6 +6,8 @@ on:
         - '.github/workflows/autofill-automation.yml'
     push:
       branches: ['main']
+      paths:
+        - '.github/workflows/autofill-automation.yml'
 jobs:
   build:
     runs-on: macos-13
