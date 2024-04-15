@@ -3,11 +3,11 @@ permissions: read-all
 on:
     pull_request:
       paths:
-        - 'firefox-ios/Client/Assets/CC_Script/'
+        - 'firefox-ios/Client/Assets/CC_Script/**'
     push:
       branches: ['main']
       paths:
-        - 'firefox-ios/Client/Assets/CC_Script/'
+        - 'firefox-ios/Client/Assets/CC_Script/**'
 jobs:
   build:
     runs-on: macos-13
