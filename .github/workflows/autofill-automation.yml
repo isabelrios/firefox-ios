@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: macos-13
-    timeout-minutes: 60
+    timeout-minutes: 40
     strategy:
       matrix:
         python-version: [3.9]
