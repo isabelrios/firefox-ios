@@ -1,6 +1,7 @@
 name: Build and Run Autofill Automation
 permissions: read-all
 on:
+    workflow_dispatch: {}
     pull_request:
       paths:
         - 'firefox-ios/Client/Assets/CC_Script/**'
@@ -19,6 +20,8 @@ jobs:
     steps:
         - name: Checkout repository
           uses: actions/checkout@v4
+          with:
+            persist-credentials: false
 
         - name: Clone repository
           run: |
