@@ -73,6 +73,7 @@ class BrowserViewController: UIViewController,
     var searchLoader: SearchLoader?
     var findInPageBar: FindInPageBar?
     var zoomPageBar: ZoomPageBar?
+    var microSurvey: MicroSurveyPromptView?
     lazy var mailtoLinkHandler = MailtoLinkHandler()
     var urlFromAnotherApp: UrlToOpenModel?
     var isCrashAlertShowing = false
@@ -83,7 +84,6 @@ class BrowserViewController: UIViewController,
     var toolbarContextHintVC: ContextualHintViewController
     var dataClearanceContextHintVC: ContextualHintViewController
     let shoppingContextHintVC: ContextualHintViewController
-    private var backgroundTabLoader: DefaultBackgroundTabLoader
     var windowUUID: WindowUUID { return tabManager.windowUUID }
     var currentWindowUUID: UUID? { return windowUUID }
     private var observedWebViews = WeakList<WKWebView>()
@@ -241,7 +241,6 @@ class BrowserViewController: UIViewController,
         )
         self.dataClearanceContextHintVC = ContextualHintViewController(with: dataClearanceViewProvider,
                                                                        windowUUID: windowUUID)
-        self.backgroundTabLoader = DefaultBackgroundTabLoader(tabQueue: profile.queue)
         super.init(nibName: nil, bundle: nil)
         didInit()
     }
@@ -272,7 +271,7 @@ class BrowserViewController: UIViewController,
         screenshotHelper = ScreenshotHelper(controller: self)
         tabManager.addDelegate(self)
         tabManager.addNavigationDelegate(self)
-        downloadQueue.delegate = self
+        downloadQueue.addDelegate(self)
         let tabWindowUUID = tabManager.windowUUID
         AppEventQueue.wait(for: [.startupFlowComplete, .tabRestoration(tabWindowUUID)]) { [weak self] in
             // Ensure we call into didBecomeActive at least once during startup flow (if needed)
@@ -290,6 +289,7 @@ class BrowserViewController: UIViewController,
     /// open tab, and because of that we need to leave overlay state
     @objc
     func didTapUndoCloseAllTabToast(notification: Notification) {
+        guard windowUUID == notification.windowUUID else { return }
         overlayManager.switchTab(shouldCancelLoading: true)
     }
 
@@ -330,6 +330,7 @@ class BrowserViewController: UIViewController,
         updateHeaderConstraints()
         toolbar.setNeedsDisplay()
         urlBar.updateConstraints()
+        updateMicroSurveyConstraints()
     }
 
     func shouldShowToolbarForTraitCollection(_ previousTraitCollection: UITraitCollection) -> Bool {
@@ -494,20 +495,13 @@ class BrowserViewController: UIViewController,
             urlBar.locationView.tabDidChangeContentBlocking(tab)
         }
 
-        updateWallpaperMetadata()
         dismissModalsIfStartAtHome()
-
-        // When, for example, you "Load in Background" via the share sheet, the tab is added to `Profile`'s `TabQueue`.
-        // Make sure that our startup flow is completed and other tabs have been restored before we load.
-        AppEventQueue.wait(for: [.startupFlowComplete, .tabRestoration(tabManager.windowUUID)]) { [weak self] in
-            self?.backgroundTabLoader.loadBackgroundTabs()
-        }
     }
 
     private func nightModeUpdates() {
         if NightModeHelper.isActivated(),
            !featureFlags.isFeatureEnabled(.nightMode, checking: .buildOnly) {
-            NightModeHelper.turnOff(tabManager: tabManager)
+            NightModeHelper.turnOff()
             themeManager.reloadTheme(for: windowUUID)
         }
 
@@ -782,6 +776,8 @@ class BrowserViewController: UIViewController,
 
         browserDelegate?.browserHasLoaded()
         AppEventQueue.signal(event: .browserIsReady)
+
+        setupMicroSurvey()
     }
 
     private func prepareURLOnboardingContextualHint() {
@@ -1061,14 +1057,6 @@ class BrowserViewController: UIViewController,
         }
     }
 
-    private func updateWallpaperMetadata() {
-        let metadataQueue = DispatchQueue(label: "com.moz.wallpaperVerification.queue")
-        metadataQueue.async {
-            let wallpaperManager = WallpaperManager()
-            wallpaperManager.checkForUpdates()
-        }
-    }
-
     func resetBrowserChrome() {
         // animate and reset transform for tab chrome
         urlBar.updateAlphaForSubviews(1)
@@ -1146,6 +1134,62 @@ class BrowserViewController: UIViewController,
         browserDelegate?.show(webView: webView)
     }
 
+    // MARK: - Micro Survey
+    private func setupMicroSurvey() {
+        guard featureFlags.isFeatureEnabled(.microSurvey, checking: .buildOnly) else { return }
+
+        // TODO: FXIOS-8990: Create Micro Survey Surface Manager to handle showing survey prompt
+        if microSurvey != nil {
+            removeMicroSurveyPrompt()
+        }
+
+        createMicroSurveyPrompt()
+    }
+
+    private func updateMicroSurveyConstraints() {
+        guard let microSurvey else { return }
+
+        microSurvey.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(microSurvey)
+
+        if urlBar.isBottomSearchBar {
+            overKeyboardContainer.addArrangedViewToTop(microSurvey, animated: false, completion: {
+                self.view.layoutIfNeeded()
+            })
+        } else {
+            bottomContainer.addArrangedViewToTop(microSurvey, animated: false, completion: {
+                self.view.layoutIfNeeded()
+            })
+        }
+
+        microSurvey.applyTheme(theme: themeManager.currentTheme(for: windowUUID))
+
+        updateViewConstraints()
+    }
+
+    private func createMicroSurveyPrompt() {
+        let viewModel = MicroSurveyViewModel(openAction: {
+            // TODO: FXIOS-8895: Create Micro Survey Modal View
+        }) {
+            // TODO: FXIOS-8898: Setup Redux to handle open and dismissing modal
+        }
+
+        self.microSurvey = MicroSurveyPromptView(viewModel: viewModel)
+
+        updateMicroSurveyConstraints()
+    }
+
+    private func removeMicroSurveyPrompt() {
+        guard let microSurvey else { return }
+        if urlBar.isBottomSearchBar {
+            overKeyboardContainer.removeArrangedView(microSurvey)
+        } else {
+            bottomContainer.removeArrangedView(microSurvey)
+        }
+
+        self.microSurvey = nil
+        updateViewConstraints()
+    }
     // MARK: - Update content
 
     func updateContentInHomePanel(_ browserViewType: BrowserViewType) {
@@ -1770,7 +1814,9 @@ class BrowserViewController: UIViewController,
         }
 
         if webViewStatus == .finishedNavigation {
-            if tab !== tabManager.selectedTab, let webView = tab.webView {
+            if tab !== tabManager.selectedTab,
+                let webView = tab.webView,
+                tab.screenshot == nil {
                 // To Screenshot a tab that is hidden we must add the webView,
                 // then wait enough time for the webview to render.
                 webView.frame = contentContainer.frame
@@ -1778,6 +1824,18 @@ class BrowserViewController: UIViewController,
                 // This is kind of a hacky fix for Bug 1476637 to prevent webpages from focusing the
                 // touch-screen keyboard from the background even though they shouldn't be able to.
                 webView.resignFirstResponder()
+
+                // We need a better way of identifying when webviews are finished rendering
+                // There are cases in which the page will still show a loading animation or nothing
+                // when the screenshot is being taken, depending on internet connection
+                // Issue created: https://github.com/mozilla-mobile/firefox-ios/issues/7003
+                let delayedTimeInterval = DispatchTimeInterval.milliseconds(500)
+                DispatchQueue.main.asyncAfter(deadline: .now() + delayedTimeInterval) {
+                    self.screenshotHelper.takeScreenshot(tab)
+                    if webView.superview == self.view {
+                        webView.removeFromSuperview()
+                    }
+                }
             }
         }
     }
@@ -2284,23 +2342,28 @@ extension BrowserViewController: LegacyTabDelegate {
                 theme: currentTheme()
             )
             tab.addContentScript(logins, name: LoginsHelper.name())
-            logins.foundFieldValues = { [weak self] field, currentRequestId in
+            logins.foundFieldValues = { [weak self, weak tab, weak webView] field, currentRequestId in
                 Task {
                     guard self?.autofillLoginNimbusFeatureFlag() == true else { return }
-                    guard let tabURL = tab.url else { return }
+                    guard let tabURL = tab?.url else { return }
                     let logins = (try? await self?.profile.logins.listLogins()) ?? []
                     let loginsForCurrentTab = logins.filter { login in
                         guard let recordHostnameURL = URL(string: login.hostname) else { return false }
                         return recordHostnameURL.baseDomain == tabURL.baseDomain
                     }
                     if !loginsForCurrentTab.isEmpty {
-                        tab.webView?.accessoryView.reloadViewFor(.login)
-                        tab.webView?.reloadInputViews()
+                        tab?.webView?.accessoryView.reloadViewFor(.login)
+                        tab?.webView?.reloadInputViews()
+                        TelemetryWrapper.recordEvent(
+                            category: .action,
+                            method: .view,
+                            object: .loginsAutofillPromptShown
+                        )
                     }
-                    tab.webView?.accessoryView.savedLoginsClosure = {
+                    tab?.webView?.accessoryView.savedLoginsClosure = {
                         Task { @MainActor [weak self] in
                             // Dismiss keyboard
-                            webView.resignFirstResponder()
+                            webView?.resignFirstResponder()
                             self?.authenticateSelectSavedLoginsClosureBottomSheet(
                                 tabURL: tabURL,
                                 currentRequestId: currentRequestId
@@ -2700,6 +2763,11 @@ extension BrowserViewController: TabManagerDelegate {
             updateTabCountUsingTabManager(tabManager)
         }
         tab.tabDelegate = self
+
+        // Show the Toolbar if a link from the current tab, open another tab
+        if placeNextToParentTab {
+            scrollController.showToolbars(animated: false)
+        }
     }
 
     func tabManager(_ tabManager: TabManager, didRemoveTab tab: Tab, isRestoring: Bool) {

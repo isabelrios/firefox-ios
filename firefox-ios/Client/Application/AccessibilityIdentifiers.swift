@@ -43,6 +43,7 @@ public struct AccessibilityIdentifiers {
             static let scanQRCodeButton = "urlBar-scanQRCode"
             static let cancelButton = "urlBar-cancel"
             static let searchTextField = "address"
+            static let url = "url"
         }
 
         struct KeyboardAccessory {
@@ -128,6 +129,13 @@ public struct AccessibilityIdentifiers {
 
     struct GeneralizedIdentifiers {
         public static let back = "Back"
+    }
+
+    struct MicroSurvey {
+        struct Prompt {
+            static let closeButton = "MicroSurvey.Prompt.CloseButton"
+            static let takeSurveyButton = "MicroSurvey.Prompt.TakeSurveyButton"
+        }
     }
 
     struct PrivateMode {
@@ -440,6 +448,7 @@ public struct AccessibilityIdentifiers {
             static let deleteMozillaEngine = "Remove Mozilla Engine"
             static let deleteButton = "Delete"
             static let disableSearchSuggestsInPrivateMode = "PrivateMode.DisableSearchSuggests"
+            static let showSearchSuggestions = "FirefoxSuggestShowSearchSuggestions"
         }
 
         struct AdvancedAccountSettings {
@@ -548,8 +557,32 @@ public struct AccessibilityIdentifiers {
             static let title = "SendAnonymousUsageData"
         }
 
+        struct PrivacyPolicy {
+            static let title = "PrivacyPolicy"
+        }
+
         struct ShowIntroduction {
             static let title = "ShowTour"
+        }
+
+        struct SendFeedback {
+            static let title = "SendFeedback"
+        }
+
+        struct Help {
+            static let title = "Help"
+        }
+
+        struct RateOnAppStore {
+            static let title = "RateOnAppStore"
+        }
+
+        struct Licenses {
+            static let title = "Licenses"
+        }
+
+        struct YourRights {
+            static let title = "YourRights"
         }
 
         struct Siri {
