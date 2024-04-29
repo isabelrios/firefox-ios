@@ -4,7 +4,8 @@ on:
     workflow_dispatch: {}
     pull_request:
       paths:
-        - 'firefox-ios/Client/Assets/CC_Script/**'
+        #- 'firefox-ios/Client/Assets/CC_Script/**'
+        - firefox-ios/Client/Assets/CC_Script/FormAutofillUtils.sys.mjs
     push:
       branches: ['main']
       paths:
