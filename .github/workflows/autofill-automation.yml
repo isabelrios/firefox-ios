@@ -18,7 +18,7 @@ jobs:
         xcode: ["15.2"]
     steps:
         - name: Checkout repository
-          uses: actions/checkout@v4
+          uses: actions/checkout@v2
           with:
             persist-credentials: false
 
