@@ -20,7 +20,6 @@ jobs:
         - name: Checkout repository
           uses: actions/checkout@v2
           with:
-            persist-credentials: false
             token: ${{ secrets.PAT_GITHUB }}
 
         - name: Clone repository
