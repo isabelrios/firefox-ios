@@ -57,13 +57,13 @@ jobs:
           with:
             payload: |
               {
-                "text": "GitHub Action ${{ env.github_action_name }} build result: ${{ job.status }}",
+                "text": "GitHub Action Running Tests For ${{ env.github_action_name }} result: ${{ job.status }}",
                 "blocks": [
                   {
                     "type": "section",
                     "text": {
                       "type": "mrkdwn",
-                      "text": "GitHub Action build result: ${{ job.status }}"
+                      "text": "GitHub Action Running Tests For result: ${{ job.status }}"
                     }
                   }
                 ]
