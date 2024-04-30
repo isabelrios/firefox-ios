@@ -9,6 +9,8 @@ on:
       branches: ['main']
       paths:
         - 'firefox-ios/Client/Assets/CC_Script/**'
+env:
+    SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 jobs:
   build:
     runs-on: macos-13
@@ -65,6 +67,3 @@ jobs:
                   }
                 ]
               }
-          env:
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-
