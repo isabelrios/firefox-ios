@@ -43,10 +43,12 @@ jobs:
             echo "now run tests"
             spm tes
         - name: Get the current github action name
+          if: always()
           run: |
             github_action_name="Update credential provider script"
             echo "github_action_name=$github_action_name" >> $GITHUB_ENV
         - name: Send custom JSON data to Slack workflow
+          if: always()
           id: slack
           uses: slackapi/slack-github-action@v1.26.0
           with:
