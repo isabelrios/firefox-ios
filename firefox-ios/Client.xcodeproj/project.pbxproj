@@ -3404,6 +3404,9 @@
 		4344D02F292259CE00B12BF8 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/SearchHeaderTitle.strings"; sourceTree = "<group>"; };
 		4345055729E4289200F137B6 /* sat-Olck */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sat-Olck"; path = "sat-Olck.lproj/Settings.strings"; sourceTree = "<group>"; };
 		4345441C26D2E52600D5EEAA /* SearchTermGroupsUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermGroupsUtility.swift; sourceTree = "<group>"; };
+		4346037C2BE8F76E009F5444 /* tt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tt; path = tt.lproj/BottomSheet.strings; sourceTree = "<group>"; };
+		4346037D2BE8F76E009F5444 /* tt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tt; path = tt.lproj/ContextualHints.strings; sourceTree = "<group>"; };
+		4346037E2BE8F76E009F5444 /* tt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tt; path = tt.lproj/Credentials.strings; sourceTree = "<group>"; };
 		43464A7329E4264400C3CA87 /* es-CL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-CL"; path = "es-CL.lproj/Edit Card.strings"; sourceTree = "<group>"; };
 		4346FF07295BA6A200F4D220 /* CreditCardSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardSettingsViewController.swift; sourceTree = "<group>"; };
 		4347022C2AC1A19200BEB809 /* dsb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = dsb; path = dsb.lproj/Share.strings; sourceTree = "<group>"; };
@@ -16034,6 +16037,7 @@
 				4313B9112BCD4591007473A4 /* pl */,
 				43A2FD552BCD45C5004981E9 /* rm */,
 				43CE859E2BCD467D00EFFAA4 /* th */,
+				4346037C2BE8F76E009F5444 /* tt */,
 			);
 			name = BottomSheet.strings;
 			sourceTree = "<group>";
@@ -16912,6 +16916,7 @@
 				43CEB4582B680459000F85A9 /* pt-PT */,
 				439FC0602B95EB76006568A6 /* gl */,
 				432792652BB192FD001707B5 /* en-CA */,
+				4346037D2BE8F76E009F5444 /* tt */,
 			);
 			name = ContextualHints.strings;
 			sourceTree = "<group>";
@@ -17032,6 +17037,7 @@
 				439FC0622B95EB76006568A6 /* gl */,
 				432792672BB192FD001707B5 /* en-CA */,
 				438D48872BCD44730052F1E1 /* kab */,
+				4346037E2BE8F76E009F5444 /* tt */,
 			);
 			name = Credentials.strings;
 			sourceTree = "<group>";
