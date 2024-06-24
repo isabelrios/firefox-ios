@@ -1400,7 +1400,7 @@
 "Settings.OfferClipboardBar.Status" = "開啟 Firefox 時";
 
 /* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
-"Settings.OfferClipboardBar.Title" = "讓您開啟複製的鏈結";
+"Settings.OfferClipboardBar.Title" = "詢問是否直接開啟複製的鏈結";
 
 /* Title for Open With Settings */
 "Settings.OpenWith.PageTitle" = "開啟郵件鏈結的程式";
@@ -1697,7 +1697,7 @@
 "Toasts.OpenAppStore" = "開啟 App Store";
 
 /* Label for button to undo the action just performed */
-"Toasts.Undo" = "復原";
+"Toasts.Undo" = "還原";
 
 /* This label is meant to signify the section containing a group of items from the current day. */
 "Today" = "今天";
