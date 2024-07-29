@@ -68,7 +68,7 @@
 "Settings.Notifications.SyncNotificationsTitle.v112" = "Sincrunizazione";
 
 /* This is the footer title informing the user needs to turn on notifications in iOS Settings. Both placeholders will be replaced with the app name. */
-"Settings.Notifications.SystemNotificationsDisabledMessage.v112" = "Avete disattivatu tutte e nutificazioni di %1$@. Attivatele via Preferenze > Nutificazioni > %2$@";
+"Settings.Notifications.SystemNotificationsDisabledMessage.v112" = "Avete disattivatu tutte e nutificazioni di %1$@. Attivatele via Parametri > Nutificazioni > %2$@";
 
 /* This is the description for the setting that toggles Tips and Features feature in the settings menu under the Notifications section. The placeholder will be replaced with the app name. */
 "Settings.Notifications.TipsAndFeaturesNotificationsStatus.v112" = "Sapene di più nant’à funzioni ghjuvevule è cumu ottene u più bonu di %@.";
@@ -80,7 +80,7 @@
 "Settings.Notifications.Title.v112" = "Nutificazioni";
 
 /* This is the title informing the user needs to turn on notifications in iOS Settings. The placeholder will be replaced with the app name. */
-"Settings.Notifications.TurnOnNotificationsMessage.v112" = "Andate in e preferenze di u vostru apparechju per attivà e nutificazioni in %@";
+"Settings.Notifications.TurnOnNotificationsMessage.v112" = "Andate in i parametri di u vostru apparechju per attivà e nutificazioni in %@";
 
 /* This is the title informing the user needs to turn on notifications in iOS Settings. */
 "Settings.Notifications.TurnOnNotificationsTitle.v112" = "Attivate e nutificazioni";
@@ -155,8 +155,8 @@
 "Settings.Search.Suggest.ShowNonSponsoredSuggestions.Title.v124.v2" = "Suggestioni da u Web";
 
 /* In the Search page of the Settings menu, the description for the setting to enable Suggestions from sponsors. Placeholder is for the app name - Firefox. */
-"Settings.Search.Suggest.ShowSponsoredSuggestions.Description.v124" = "Sustene %@ cù suggestioni finanziare occasiunale";
+"Settings.Search.Suggest.ShowSponsoredSuggestions.Description.v124" = "Sustene %@ cù suggestioni occasiunale spunsurizate";
 
 /* In the Search page of the Settings menu, the title for the setting to enable Suggestions from sponsors. */
-"Settings.Search.Suggest.ShowSponsoredSuggestions.Title.v124" = "Suggestioni da i finanziati";
+"Settings.Search.Suggest.ShowSponsoredSuggestions.Title.v124" = "Suggestioni da i spunsurizatori";
 
