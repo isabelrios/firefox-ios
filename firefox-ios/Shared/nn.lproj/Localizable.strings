@@ -851,7 +851,7 @@
 "Menu.TrackingProtectionDescription.SocialNetworksNew" = "Sosiale nettverk plasserer sporarar på andre nettstadar for å byggje ein meir fullstendig og målretta profil av deg. Blokkering av desse sporarane reduserer kor mykje sosiale media-selskap kan sjå kva du gjer på nettet.";
 
 /* The title that shows the number of fingerprinting scripts blocked */
-"Menu.TrackingProtectionFingerprintersBlocked.Title" = "Fingerprinters";
+"Menu.TrackingProtectionFingerprintersBlocked.Title" = "Nettlesaravtrykk";
 
 /* The title for the option to view the What's new page. */
 "Menu.WhatsNew.Title" = "Kva er nytt";
@@ -1085,7 +1085,7 @@
 "SendTo.NoDevicesFound.Message" = "Du har ingen andre einingar tilkopla til denne Firefox-kontoen som er tilgjengelege for synkronisering.";
 
 /* See http://mzl.la/1ISlXnU */
-"SendTo.NotSignedIn.Message" = "Ver snill og opne Firefox, gå till Instillingar og logg inn for å fortsetje.";
+"SendTo.NotSignedIn.Message" = "Opne Firefox, gå till Instillingar og logg inn for å halde fram.";
 
 /* See http://mzl.la/1ISlXnU */
 "SendTo.NotSignedIn.Title" = "Du er ikkje innlogga med Firefox-kontoen din.";
