@@ -6,7 +6,7 @@ on:
   schedule:
     - cron: '0 0 * * 2' # Every Tuesday at midnight
     - cron: '0 0 * * 4' # Every Thursday at midnight
-  workflow_dispatch: # Allows manual triggering of the workflow
+  workflow_dispatch: {}# Allows manual triggering of the workflow
 
 env:
     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
