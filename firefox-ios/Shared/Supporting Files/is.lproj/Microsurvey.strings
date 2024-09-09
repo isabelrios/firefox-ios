@@ -59,7 +59,7 @@
 "Microsurvey.Survey.OptionsOrder.AccessibilityLabel.v129" = "%1$@ af %2$@";
 
 /* After engaging with the microsurvey prompt, the microsurvey pops up as a bottom sheet for the user to answer, this the title of a link on the survey and allows the user to navigate to our privacy policy details. */
-"Microsurvey.Survey.PrivacyPolicyLink.v127" = "Meðferð persónuupplýsinga";
+"Microsurvey.Survey.PrivacyPolicyLink.v127" = "Upplýsingar um meðferð persónuupplýsinga";
 
 /* After engaging with the microsurvey prompt, the microsurvey pops up as a bottom sheet for the user to answer, this is the accessibility label that states whether the survey option was selected. */
 "Microsurvey.Survey.RadioButton.Selected.AccessibilityLabel.v129" = "Valið";
