@@ -1,3 +1,63 @@
+/* On the main menu, at the top, when the user is signed out. The title for the sign in action */
+"MainMenu.Account.SignedOut.Title.v131" = "Kennaskañ";
+
+/* On the main menu, at the top, when the user is signed in but there was an error syncing. The description subtitle for the sync error state. */
+"MainMenu.Account.SyncError.Description.v131" = "Ehanet eo ar goubredañ";
+
+/* On the main menu, at the top, when the user is signed in but there was an error syncing. The title for this state. */
+"MainMenu.Account.SyncError.Title.v131" = "Kennaskañ en-dro evit goubredañ";
+
+/* On the main menu, the title for the action that will take the user to the Bookmarks panel. Please keep as short as possible, <15 chars of space available. */
+"MainMenu.PanelLinkSection.Bookmarks.Title.v131" = "Sinedoù";
+
+/* On the main menu, the title for the action that will take the user to the Downloads panel. Please keep as short as possible, <15 chars of space available. */
+"MainMenu.PanelLinkSection.Downloads.Title.v131" = "Pellgargadurioù";
+
+/* On the main menu, the title for the action that will take the user to the History panel. Please keep as short as possible, <15 chars of space available. */
+"MainMenu.PanelLinkSection.History.Title.v131" = "Roll istor";
+
+/* On the main menu, the title for the action that will take the user to the Passwords panel in the settings screen. Please keep as short as possible, <15 chars of space available. */
+"MainMenu.PanelLinkSection.Passwords.Title.v131" = "Gerioù-tremen";
+
+/* On the main menu, the title for the action that will take the user to the Customize Hopegape section in the settings screen. */
+"MainMenu.SettingsSection.CustomizeHomepage.Title.v131" = "Personelaat an degemer";
+
+/* On the main menu, the title for the action that will take the user to a website to get help from Mozilla. */
+"MainMenu.SettingsSection.GetHelp.Title.v131" = "Kaout skoazell";
+
+/* On the main menu, the title for the action that will take the user to the Settings menu. */
+"MainMenu.SettingsSection.Settings.Title.v131" = "Arventennoù";
+
+/* On the main menu, a string below the Save submenu title, indicating what kind of tools are available in that menu. This string is for the Add to Homescreen tool. */
+"MainMenu.Submenus.Save.AddToHomeScreen.Subtitle.v131" = "Degemer";
+
+/* On the main menu, in the Save submenu, the title for the menu component that allows a user to add a website to the home screen. */
+"MainMenu.Submenus.Save.AddToHomeScreen.Title.v131" = "Ouzhpennañ dʼar skramm degemer";
+
+/* On the main menu, a string below the Save submenu title, indicating what kind of tools are available in that menu. This string is for the Shortcuts tool. */
+"MainMenu.Submenus.Save.AddToShortcuts.Subtitle.v131" = "Berradenn";
+
+/* On the main menu, in the Save submenu, the title for the menu component that allows a user to add the current website to the shortcuts on the homepage. */
+"MainMenu.Submenus.Save.AddToShortcuts.Title.v131" = "Ouzhpennañ d’ar berradennoù";
+
+/* On the main menu, a string below the Tool submenu tiitle, indicating what kind of tools are available in that menu. This string is for the Reader View tool. */
+"MainMenu.Submenus.Tools.ReaderView.Subtitle.v131" = "Mod lenn";
+
+/* On the main menu, a string below the Tool submenu tiitle, indicating what kind of tools are available in that menu. This string is for the Report Broken Site tool. */
+"MainMenu.Submenus.Tools.ReportBrokenSite.Subtitle.v131" = "Danevelliñ";
+
+/* On the main menu, the title for the action that will take the user to the site where they can report a broken website to our web compatibility team. */
+"MainMenu.Submenus.Tools.ReportBrokenSite.Title.v131" = "Danevelliñ ul lec’hienn torret";
+
+/* On the main menu, a string below the Tool submenu tiitle, indicating what kind of tools are available in that menu. This string is for the Report Share tool. */
+"MainMenu.Submenus.Tools.Share.Subtitle.v131" = "Rannañ";
+
+/* On the main menu, the title for the action that will take the user to the Share module in the application. */
+"MainMenu.Submenus.Tools.Share.Title.v131" = "Rannañ";
+
+/* On the main menu, a string below the Tool submenu title, indicating what kind of tools are available in that menu. This string is for the Zoom tool. */
+"MainMenu.Submenus.Tools.Zoom.Subtitle.v131" = "Zoum";
+
 /* On the main menu, in the tools submenu, the title for the menu component that indicates the current zoom level. Placeholder is for the current zoom level percentage. */
 "MainMenu.Submenus.Tools.Zoom.Title.v131" = "Zoum (%@)";
 
