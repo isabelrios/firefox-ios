@@ -89,13 +89,13 @@
 "MainMenu.Submenus.Tools.Print.Title.v131" = "列印";
 
 /* On the main menu, the title for the action that will turn the reader view on for the current website. */
-"MainMenu.Submenus.Tools.ReaderView.Off.Title.v131" = "關閉閱讀模式";
+"MainMenu.Submenus.Tools.ReaderView.Off.Title.v131" = "關閉閱讀畫面";
 
 /* On the main menu, the title for the action that will turn the reader view on for the current website. */
-"MainMenu.Submenus.Tools.ReaderView.On.Title.v131" = "開啟閱讀模式";
+"MainMenu.Submenus.Tools.ReaderView.On.Title.v131" = "開啟閱讀畫面";
 
 /* On the main menu, a string below the Tool submenu tiitle, indicating what kind of tools are available in that menu. This string is for the Reader View tool. */
-"MainMenu.Submenus.Tools.ReaderView.Subtitle.v131" = "閱讀模式";
+"MainMenu.Submenus.Tools.ReaderView.Subtitle.v131" = "閱讀畫面";
 
 /* On the main menu, a string below the Tool submenu tiitle, indicating what kind of tools are available in that menu. This string is for the Report Broken Site tool. */
 "MainMenu.Submenus.Tools.ReportBrokenSite.Subtitle.v131" = "回報";
