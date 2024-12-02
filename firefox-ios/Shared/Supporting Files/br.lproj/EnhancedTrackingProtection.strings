@@ -73,6 +73,9 @@
 /* Text to let users know the site verifier, where the placeholder represents the SSL certificate signer which is on the enhanced tracking protection screen after the user taps on the connection details. */
 "Menu.EnhancedTrackingProtection.Details.Verifier.v128" = "Gwiriet gant %@";
 
+/* The title for the button that allows users to view certificates inside the enhanced tracking protection details screen. */
+"Menu.EnhancedTrackingProtection.Details.ViewCertificatesTitle.v131" = "Gwelout an testeni";
+
 /* Header for the enhanced tracking protection screen when the user has opted out of the feature. Placeholder will be replaced by the app name */
 "Menu.EnhancedTrackingProtection.Off.Header.v128" = "Diweredekaet eo %@. Aliañ a reomp deoc’h gweredekaat anezhañ en-dro.";
 
@@ -96,9 +99,6 @@
 
 /* Title for the switch to enable/disable enhanced tracking protection inside the menu. */
 "Menu.EnhancedTrackingProtection.Switch.Title.v128" = "Gwarez araokaet a-enep d’an heulierien";
-
-/* A switch to disable enhanced tracking protection inside the menu. */
-"Menu.EnhancedTrackingProtection.SwitchOff.Text.v128" = "Diweredekaet eo ar gwarezioù. Aliañ a reomp deoc’h gweredekaat anezho en-dro. ";
 
 /* A switch to disable enhanced tracking protection inside the menu. */
 "Menu.EnhancedTrackingProtection.SwitchOff.Text.v129" = "Diweredekaet eo ar gwarezioù. Aliañ a reomp deoc’h gweredekaat anezho en-dro. ";
