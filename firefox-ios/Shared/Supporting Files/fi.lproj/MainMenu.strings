@@ -34,6 +34,9 @@
 /* On the main menu, the title for the action that will take the user to a What's New in Firefox popup. Placeholder is for the app name. */
 "MainMenu.SettingsSection.WhatsNew.Title.v131" = "Uutta %@issa";
 
+/* On the main menu, a string below the Save submenu title, indicating what kind of tools are available in that menu. This string is for the Add to Homescreen tool. */
+"MainMenu.Submenus.Save.AddToHomeScreen.Subtitle.v131" = "Koti";
+
 /* On the main menu, in the Save submenu, the title for the menu component that allows a user to add a website to the home screen. */
 "MainMenu.Submenus.Save.AddToHomeScreen.Title.v131" = "Lisää aloitusnäytölle";
 
@@ -97,14 +100,17 @@
 /* On the main menu, a string below the Tool submenu tiitle, indicating what kind of tools are available in that menu. This string is for the Report Broken Site tool. */
 "MainMenu.Submenus.Tools.ReportBrokenSite.Subtitle.v131" = "Ilmoita";
 
-/* On the main menu, the title for the action that will take the user to the site where they can report a broken website to our web compatibility team. */
-"MainMenu.Submenus.Tools.ReportBrokenSite.Title.v131" = "Ilmoita rikkinäisestä sivustosta";
-
 /* On the main menu, a string below the Tool submenu tiitle, indicating what kind of tools are available in that menu. This string is for the Report Share tool. */
 "MainMenu.Submenus.Tools.Share.Subtitle.v131" = "Jaa";
 
 /* On the main menu, the title for the action that will take the user to the Share module in the application. */
 "MainMenu.Submenus.Tools.Share.Title.v131" = "Jaa";
+
+/* On the main menu, a string below the Tool submenu title, indicating what kind of tools are available in that menu. This string is for the Zoom tool. */
+"MainMenu.Submenus.Tools.Zoom.Subtitle.v131" = "Zoomaus";
+
+/* On the main menu, in the tools submenu, the title for the menu component that indicates the current zoom level. Placeholder is for the current zoom level percentage. */
+"MainMenu.Submenus.Tools.Zoom.Title.v131" = "Zoomaus (%@)";
 
 /* On the main menu, the title for the action that will create a new private tab. */
 "MainMenu.TabsSection.NewPrivateTab.Title.v131" = "Uusi yksityinen välilehti";

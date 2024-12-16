@@ -38,7 +38,7 @@
 "MainMenu.Submenus.Save.AddToHomeScreen.Subtitle.v131" = "Úvodná obrazovka";
 
 /* On the main menu, in the Save submenu, the title for the menu component that allows a user to add a website to the home screen. */
-"MainMenu.Submenus.Save.AddToHomeScreen.Title.v131" = "Pridať na úvodnú obrazovku";
+"MainMenu.Submenus.Save.AddToHomeScreen.Title.v131" = "Pridať na plochu";
 
 /* On the main menu, a string below the Save submenu title, indicating what kind of tools are available in that menu. This string is for the Shortcuts tool. */
 "MainMenu.Submenus.Save.AddToShortcuts.Subtitle.v131" = "Skratka";
@@ -99,9 +99,6 @@
 
 /* On the main menu, a string below the Tool submenu tiitle, indicating what kind of tools are available in that menu. This string is for the Report Broken Site tool. */
 "MainMenu.Submenus.Tools.ReportBrokenSite.Subtitle.v131" = "Nahlásiť";
-
-/* On the main menu, the title for the action that will take the user to the site where they can report a broken website to our web compatibility team. */
-"MainMenu.Submenus.Tools.ReportBrokenSite.Title.v131" = "Nahlásiť nefunkčnú stránku";
 
 /* On the main menu, a string below the Tool submenu tiitle, indicating what kind of tools are available in that menu. This string is for the Report Share tool. */
 "MainMenu.Submenus.Tools.Share.Subtitle.v131" = "Zdieľať";
