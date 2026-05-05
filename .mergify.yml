@@ -1,6 +1,6 @@
 queue_rules:
   - name: default
-    conditions:
+    merge_conditions:
       - check-success=Bitrise
 
 pull_request_rules:
@@ -8,8 +8,8 @@ pull_request_rules:
     conditions:
       - conflict
     actions:
-        comment:
-          message: This pull request has conflicts when rebasing. Could you fix it @{{author}}? 🙏
+      comment:
+        message: This pull request has conflicts when rebasing. Could you fix it @{{author}}? 🙏
   - name: Bitrise update - Auto Merge
     conditions:
       - author=github-actions[bot]
