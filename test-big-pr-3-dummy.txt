@@ -898,3 +898,4 @@ dummy line 897
 dummy line 898
 dummy line 899
 dummy line 900
+trigger synchronize
