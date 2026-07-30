@@ -97,6 +97,9 @@
 /* The description of the section in the World Cup widget that shows when the selected team was eliminated. */
 "WorldCup.HomepageWidget.EliminatedTeamSection.Description.v151" = "Izberite še kakšno ekipo, katere napredek na svetovnem prvenstvu želite spremljati.";
 
+/* The accessibility label for the button in the eliminated section that removes the World Cup widget from the homepage. */
+"WorldCup.HomepageWidget.EliminatedTeamSection.RemoveButtonAccessibilityLabel.v151" = "Odstrani pripomoček za svetovno prvenstvo";
+
 /* The label for the button in the eliminated section that removes the World Cup widget from the homepage. */
 "WorldCup.HomepageWidget.EliminatedTeamSection.RemoveButtonLabel.v151" = "Odstrani";
 

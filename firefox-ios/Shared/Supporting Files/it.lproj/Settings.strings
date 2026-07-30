@@ -269,7 +269,7 @@
 "Settings.Search.GoogleLens.Description.v153" = "Invia immagini a Google per effettuare ricerche.";
 
 /* In the Search settings, this is the disclaimer underneath the Google Lens settings toggle that explains the conditions required for Google Lens to be available. */
-"Settings.Search.GoogleLens.Footnote.v153" = "Disponibile solo se Google è attivo ed è impostato come motore di ricerca predefinito durante la navigazione.";
+"Settings.Search.GoogleLens.Footnote.v153" = "Disponibile solo se Google è attivo qui sopra ed è il motore di ricerca in uso durante la navigazione.";
 
 /* In the Search settings, this is the title that describes the Google Lens feature */
 "Settings.Search.GoogleLens.Title.v153" = "Google Lens";
@@ -329,7 +329,7 @@
 "Settings.Studies.Message.v148" = "%@ seleziona utenti in modo casuale per provare nuove funzionalità, contribuendo così a migliorare la qualità del browser per tutti.";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
-"Settings.Studies.Title.v136" = "Installa e conduci studi";
+"Settings.Studies.Title.v136" = "Installa ed esegui studi";
 
 /* Label used as a toggle item in Settings. When this is off, the user is opting out of all studies. */
 "Settings.Studies.Title.v148" = "Consenti studi sulle funzionalità";
