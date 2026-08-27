@@ -52,3 +52,9 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "ئىنتېرنېت باغلىنىشىڭىزدا مەسىلە باردەك قىلىدۇ.";
 
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "قايتا سىنا";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "ئۇلىنالمىدى";
+
