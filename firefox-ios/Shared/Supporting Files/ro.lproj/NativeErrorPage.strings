@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "Se pare că ai o problemă cu conexiunea ta la internet.";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "Este posibil ca site-ul să fie ocupat sau indisponibil. Încearcă din nou mai târziu. Dacă nu se încarcă și alte pagini, verifică conexiunea Wi-Fi sau de date. %@ poate căuta pe Wayback Machine o versiune anterioară a paginii.";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "Reîncearcă";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "Conectare eșuată";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "Caută pe Wayback Machine o versiune arhivată a paginii.";
+
