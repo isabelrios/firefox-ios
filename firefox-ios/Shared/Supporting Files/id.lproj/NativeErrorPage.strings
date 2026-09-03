@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "Sepertinya ada masalah dengan koneksi internet Anda.";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "Situs mungkin sibuk atau tidak tersedia. Coba lagi nanti. Jika laman lain tidak dapat dimuat, periksa Wi-Fi atau sambungan data Anda. %@ juga dapat mencari versi sebelumnya dari laman ini di Wayback Machine.";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "Coba Lagi";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "Tidak dapat tersambung";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "Mencari versi arsip laman ini di Wayback Machine.";
+
