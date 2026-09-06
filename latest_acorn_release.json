@@ -1,9 +1,9 @@
 {
-    "url": "https://api.github.com/repos/FirefoxUX/acorn-icons/releases/355104767",
-    "assets_url": "https://api.github.com/repos/FirefoxUX/acorn-icons/releases/355104767/assets",
-    "upload_url": "https://uploads.github.com/repos/FirefoxUX/acorn-icons/releases/355104767/assets{?name,label}",
-    "html_url": "https://github.com/FirefoxUX/acorn-icons/releases/tag/v1.99.0",
-    "id": 355104767,
+    "url": "https://api.github.com/repos/FirefoxUX/acorn-icons/releases/382908208",
+    "assets_url": "https://api.github.com/repos/FirefoxUX/acorn-icons/releases/382908208/assets",
+    "upload_url": "https://uploads.github.com/repos/FirefoxUX/acorn-icons/releases/382908208/assets{?name,label}",
+    "html_url": "https://github.com/FirefoxUX/acorn-icons/releases/tag/v1.120.0",
+    "id": 382908208,
     "author": {
         "login": "maggie-atkinson",
         "id": 175737951,
@@ -25,18 +25,18 @@
         "user_view_type": "public",
         "site_admin": false
     },
-    "node_id": "RE_kwDOI1CID84VKnf_",
-    "tag_name": "v1.99.0",
+    "node_id": "RE_kwDOI1CID84W0rcw",
+    "tag_name": "v1.120.0",
     "target_commitish": "main",
-    "name": "v1.99.0",
+    "name": "v1.120.0",
     "draft": false,
     "immutable": false,
     "prerelease": false,
-    "created_at": "2026-07-16T13:20:37Z",
-    "updated_at": "2026-07-16T13:22:45Z",
-    "published_at": "2026-07-16T13:22:45Z",
+    "created_at": "2026-09-04T17:33:46Z",
+    "updated_at": "2026-09-04T17:35:48Z",
+    "published_at": "2026-09-04T17:35:48Z",
     "assets": [],
-    "tarball_url": "https://api.github.com/repos/FirefoxUX/acorn-icons/tarball/v1.99.0",
-    "zipball_url": "https://api.github.com/repos/FirefoxUX/acorn-icons/zipball/v1.99.0",
-    "body": "# [Changelog]\r\n### [1.99.0]\r\n### Added\r\n#### Desktop\r\n\r\n- SVG\r\n  - link-16.svg\r\n  - playback-speed-16.svg\r\n  - qr-code-16.svg"
+    "tarball_url": "https://api.github.com/repos/FirefoxUX/acorn-icons/tarball/v1.120.0",
+    "zipball_url": "https://api.github.com/repos/FirefoxUX/acorn-icons/zipball/v1.120.0",
+    "body": "# [Changelog]\r\n### [v1.120.0]\r\n### Added\r\n#### Desktop\r\n- SVG\u2028  \r\n  - search-tabs-16.svg"
 }
