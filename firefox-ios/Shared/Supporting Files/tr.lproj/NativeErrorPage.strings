@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "İnternet bağlantınızla ilgili bir sorun var.";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "Site meşgul veya kullanılamıyor olabilir. Daha sonra yeniden deneyin. Başka sayfalar da yüklenmiyorsa Wi-Fi veya mobil veri bağlantınızı kontrol edin. İsterseniz %@ bu sayfanın eski bir sürümünü Wayback Machine’de arayabilir.";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "Yeniden dene";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "Bağlanılamadı";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "Bu sayfanın arşivlenmiş bir sürümünü Wayback Machine’de arar.";
+
