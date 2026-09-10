@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "Pare ch’ella ci sia un prublema cù a vostra cunnessione internet.";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "U situ hè forse sopracaricatu o indispunibule. Pruvate torna un’altra volta. S’è d’altre pagine ùn si caricanu micca, verificate a vostra cunnessione di dati o Wi-Fi. %@ pò dinù circà una versione precedente di sta pagina via Wayback Machine.";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "Pruvà torna";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "Impussibule di cunnettesi";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "Circà via Wayback Machine una versione archiviata di sta pagina.";
+

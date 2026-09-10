@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "נראה שיש בעיה בחיבור האינטרנט שלך.";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "ייתכן שהאתר עמוס או לא זמין. נא לנסות שוב מאוחר יותר. אם דפים אחרים אינם נטענים, כדאי לבדוק את חיבור ה־Wi-Fi או הנתונים הסלולריים שלך. %@ יכול גם לחפש ב־Wayback Machine גרסה קודמת של דף זה.";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "ניסיון חוזר";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "לא ניתן להתחבר";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "מחפש ב־Wayback Machine גרסה מאוחסנת של דף זה.";
+
