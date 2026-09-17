@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "Կարծես թե ձեր ինտերնետ կապի հետ կապված խնդիր կա։";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "Կայքը կարող է զբաղված լինել կամ անհասանելի լինել։ Փորձեք կրկին ավելի ուշ։ Եթե մյուս էջերը չեն բեռնվում, ստուգեք ձեր Wi-Fi-ը կամ տվյալների կապը։ %@-ը կարող է նաև որոնել Wayback Machine-ում՝ այս էջի ավելի վաղ տարբերակը գտնելու համար։";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "Կրկնել";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "Չհաջողվեց կապ հաստատել";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "Wayback Machine-ում որոնում է այս էջի արխիվացված տարբերակը։";
+
