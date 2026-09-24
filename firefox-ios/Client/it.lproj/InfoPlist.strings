@@ -20,10 +20,7 @@
 "NSMicrophoneUsageDescription" = "Firefox utilizza il microfono per registrare e caricare audio.";
 
 /* Privacy - Photo Library Additions Usage Description */
-"NSPhotoLibraryAddUsageDescription" = "Garantisci il permesso di salvare foto.";
-
-/* Privacy - Speech Recognition Usage Description */
-"NSSpeechRecognitionUsageDescription" = "Firefox sfrutta il riconoscimento vocale per trasformare la tua voce in testo da utilizzare per la ricerca.";
+"NSPhotoLibraryAddUsageDescription" = "Consente di salvare le foto.";
 
 /* (No Comment) */
 "Scan QR Code" = "Scansiona codice QR";
