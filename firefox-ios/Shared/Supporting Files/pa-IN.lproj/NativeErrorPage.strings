@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "ਤੁਹਾਡੇ ਇੰਟਰਨੈੱਟ ਕਨੈਕਸ਼ਨ ਨਾਲ ਸਮੱਸਿਆ ਜਾਪਦੀ ਹੈ।";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "ਸਾਈਟ ਰੁੱਝੀ ਹੋਈ ਜਾਂ ਗ਼ੈਰ-ਮੌਜੂਦ ਹੋ ਸਕਦੀ ਹੈ। ਬਾਅਦ ਵਿੱਚ ਕੋਸ਼ਿਸ਼ ਕਰੋ। ਜੇ ਹੋਰ ਸਫ਼ੇ ਨਹੀਂ ਲੋਡ ਸਕਦੇ ਹਨ ਤਾਂ ਆਪਣੇ Wi-Fi ਜਾਂ ਡਾਟਾ ਕਨੈਕਸ਼ਨ ਦੀ ਜਾਂਚ ਕਰੋ। %@ ਇਸ ਸਫ਼ੇ ਦੇ ਪੁਰਾਣੇ ਵਰਜ਼ਨ ਵਾਸਤੇ ਵੇਬੈਕ ਮਸ਼ੀਨ ਨੂੰ ਵੀ ਵਰਤ ਸਕਦਾ ਹੈ।";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "ਮੁੜ-ਕੋਸ਼ਿਸ਼";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "ਕਨੈਕਟ ਕਰਨ ਲਈ ਅਸਮਰੱਥ";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "ਇਸ ਸਫ਼ੇ ਦੇ ਅਕਾਇਵ ਬਣਾਏ ਵਰਜ਼ਨ ਵਾਸਤੇ ਵੇਬੈਕ ਮਸ਼ੀਨ ਨੂੰ ਲੱਭਦਾ ਹੈ।";
+
