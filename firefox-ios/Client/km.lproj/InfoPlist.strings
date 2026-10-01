@@ -22,9 +22,6 @@
 /* Privacy - Photo Library Additions Usage Description */
 "NSPhotoLibraryAddUsageDescription" = "វាអនុញ្ញាតឱ្យអ្នករក្សាទុករូបថតបាន។";
 
-/* Privacy - Speech Recognition Usage Description */
-"NSSpeechRecognitionUsageDescription" = "Firefox ប្រើ​ការ​សម្គាល់​សំឡេង ដើម្បី​បម្លែង​សំឡេង​របស់​អ្នក​ទៅ​ជា​អត្ថបទ ​សម្រាប់​ការ​ស្វែងរក​ដោយ​សំឡេង។";
-
 /* (No Comment) */
 "Scan QR Code" = "ស្គែនឃ្យូអ៝កូដ";
 
