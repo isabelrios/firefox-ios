@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "Zda se, až jo problem z wašym internetnym zwiskom.";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "Sedło jo snaź pśeśěžone abo njejo k dispoziciji. Wopytajśo pózdźej hyšći raz. Jolic se druge boki njezacytaju, pśeglědajśo swój zwisk WLAN abo datowy zwisk. %@ móžo teke Wayback Machine za staršeju wersiju toś togo boka pśepytaś.";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "Hyšći raz wopytaś";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "Zwisk njejo móžny";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "Pśepytujo Wayback Machine za archiwěrowaneju wersiju toś togo boka.";
+
