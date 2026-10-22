@@ -74,9 +74,6 @@
 "Settings.AIControls.AIPoweredFeaturesSection.BlockedStatus.v151" = "Zablokowane";
 
 /* In the AI Controls settings, in the AI powered features section, this is the text that what the blocked status means. The content between the ** ** is bolded. Please do not remove these in translation. */
-"Settings.AIControls.AIPoweredFeaturesSection.BlockedStatusDescription.v151" = "**Zablokowane**: funkcja nie będzie widoczna i nie można z niej korzystać. W przypadku sztucznej inteligencji na urządzeniu wszystkie pobrane modele zostaną usunięte.";
-
-/* In the AI Controls settings, in the AI powered features section, this is the text that what the blocked status means. The content between the ** ** is bolded. Please do not remove these in translation. */
 "Settings.AIControls.AIPoweredFeaturesSection.BlockedStatusDescriptionV2.v151" = "**Zablokowane**: funkcja nie będzie widoczna i nie można z niej korzystać. W przypadku sztucznej inteligencji na urządzeniu wszystkie pobrane modele zostaną usunięte.";
 
 /* In the AI Controls settings, in the AI powered features section, this is the message that describes the pages summaries feature */
@@ -266,7 +263,7 @@
 "Settings.Search.EnginesSuggestions.Title.v124" = "Podpowiedzi wyszukiwarek";
 
 /* In the Search settings, this is the description that describes the Google Lens feature */
-"Settings.Search.GoogleLens.Description.v153" = "Wysyłanie obrazów do Google, aby wyszukać.";
+"Settings.Search.GoogleLens.Description.v153" = "Wysyłanie obrazów do Google, by wyszukać.";
 
 /* In the Search settings, this is the disclaimer underneath the Google Lens settings toggle that explains the conditions required for Google Lens to be available. */
 "Settings.Search.GoogleLens.Footnote.v153" = "Dostępne tylko wtedy, gdy wyszukiwarka Google jest włączona i w danej chwili aktywna.";
@@ -346,12 +343,6 @@
 /* This is the section title for the gestures features under the Summarize settings section. */
 "Settings.Summarize.GesturesSection.Title.v142" = "Gesty";
 
-/* The accessibility label for the language picker button in the Summarize settings. */
-"Settings.Summarize.LanguageSection.PickerButtonAccessibilityLabel.v149" = "Wybierz język";
-
-/* The label for the picker option to select the preferred app language for the summarizer inside the Summarize settings. The preferred app language refers to the language that the user has selected to use for the app in the app settings. */
-"Settings.Summarize.LanguageSection.PreferredAppLanguageLabel.v149" = "Preferowany język aplikacji";
-
 /* The title for the language choose section for the summarizer inside the Summarize settings. */
 "Settings.Summarize.LanguageSection.Title.v149" = "Język";
 
@@ -422,7 +413,7 @@
 "Settings.Translation.Title.v145" = "Tłumaczenie";
 
 /* Footer text below the enable toggle in the Translation settings screen. */
-"Settings.Translation.ToggleFooter.v151" = "Wyłącz, aby usunąć tłumaczenie z paska narzędzi i menu.";
+"Settings.Translation.ToggleFooter.v151" = "Wyłącz, by usunąć tłumaczenie z paska narzędzi i menu.";
 
 /* This is the title for the setting that toggles the Translation feature that allows users to translate web pages under the Translation settings section. */
 "Settings.Translation.ToggleTitle.v145" = "Tłumaczenia";
