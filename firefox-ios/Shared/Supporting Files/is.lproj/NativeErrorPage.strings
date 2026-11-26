@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "Það virðist vera vandamál með nettenginguna þína.";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "Vefsvæðið gæti verið upptekið eða ekki aðgengilegt. Reyndu aftur síðar. Ef aðrar síður hlaðast ekki skaltu athuga Wi-Fi nettengingu eða gagnatenginguna þína. %@ getur einnig leitað í Wayback Machine að eldri útgáfu af þessari síðu.";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "Reyna aftur";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "Tókst ekki að tengjast";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "Leitar í Wayback Machine að geymdri útgáfu af þessari síðu.";
+

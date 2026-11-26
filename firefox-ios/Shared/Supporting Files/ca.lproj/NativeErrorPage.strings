@@ -47,8 +47,20 @@
 "NativeErrorPage.GoBackButton.v149" = "Vés enrere (recomanat)";
 
 /* On error page, this is the description for no internet connection. */
-"NativeErrorPage.NoInternetConnection.Description.v131" = "Proveu de connectar-vos en un altre dispositiu. Reviseu el mòdem o l'encaminador. Desconnecteu-vos de la Wi-Fi i torneu-vos-hi a connectar.";
+"NativeErrorPage.NoInternetConnection.Description.v131" = "Proveu de connectar-vos en un altre dispositiu. Reviseu el mòdem o l’encaminador. Desconnecteu-vos de la Wi-Fi i torneu-vos-hi a connectar.";
 
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "Sembla que hi ha un problema amb la connexió a Internet.";
+
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "Pot ser que el lloc estigui ocupat o no estigui disponible. Torneu-ho a provar més tard. Si hi ha altres pàgines que no es carreguen, comproveu la connexió Wi-Fi o de dades. El %@ també pot cercar a Wayback Machine una versió anterior d’aquesta pàgina.";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "Reintenta";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "No s’ha pogut connectar";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "Cerca a Wayback Machine una versió arxivada d’aquesta pàgina.";
 
