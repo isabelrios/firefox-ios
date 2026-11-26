@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "Wystąpił problem z połączeniem z Internetem.";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "Strona może być zajęta lub niedostępna. Spróbuj ponownie później. Jeśli inne strony się nie wczytują, sprawdź połączenie z siecią komórkową lub Wi-Fi. %@ może również przeszukać Wayback Machine pod kątem wcześniejszej wersji tej strony.";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "Spróbuj ponownie";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "Nie można połączyć";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "Przeszukuje Wayback Machine w celu znalezienia archiwalnej wersji tej strony.";
+

@@ -52,3 +52,15 @@
 /* On error page, this is the title for no internet connection */
 "NativeErrorPage.NoInternetConnection.TitleLabel.v131" = "Čini se da postoji problem s tvojom internetskom vezom.";
 
+/* Description of the error page when the app is unable to connect to the server and will show a wayback fallback. %@ is the app name (e.g. Firefox). */
+"NativeErrorPage.Wayback.Error.Description.v154" = "Web-stranica je možda zauzeta ili nedostupna. Pokušaj ponovo kasnije. Ako se ni druge stranice ne učitavaju, provjeri svoj Wi-Fi ili podatkovnu vezu. %@ može također može potražiti raniju verziju ove stranice na Wayback Machine.";
+
+/* Button label allowing the user to retry searching the Wayback Machine after a failed attempt. */
+"NativeErrorPage.Wayback.Error.Retry.v154" = "Pokušaj ponovo";
+
+/* Title of the error page when the app is unable to connect to the server and will show a wayback fallback. */
+"NativeErrorPage.Wayback.Error.Title.v154" = "Povezivanje nije moguće";
+
+/* Accessibility hint read by VoiceOver describing what happens when the 'Check for earlier version' button is clicked. */
+"NativeErrorPage.Wayback.Error.WaybackButtonA11yHint.v154" = "Traži arhiviranu verziju ove stranice na Wayback Machine stranici.";
+

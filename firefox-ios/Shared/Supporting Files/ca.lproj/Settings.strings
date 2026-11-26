@@ -74,9 +74,6 @@
 "Settings.AIControls.AIPoweredFeaturesSection.BlockedStatus.v151" = "Blocat";
 
 /* In the AI Controls settings, in the AI powered features section, this is the text that what the blocked status means. The content between the ** ** is bolded. Please do not remove these in translation. */
-"Settings.AIControls.AIPoweredFeaturesSection.BlockedStatusDescription.v151" = "**Blocat**: No veureu la funció ni la podreu utilitzar. Per a la IA en el dispositiu, s’eliminaran tots els models baixats.";
-
-/* In the AI Controls settings, in the AI powered features section, this is the text that what the blocked status means. The content between the ** ** is bolded. Please do not remove these in translation. */
 "Settings.AIControls.AIPoweredFeaturesSection.BlockedStatusDescriptionV2.v151" = "**Blocat**: No veureu la funció ni la podreu utilitzar. Per a la IA en el dispositiu, s’eliminaran tots els models baixats.";
 
 /* In the AI Controls settings, in the AI powered features section, this is the message that describes the pages summaries feature */
@@ -116,7 +113,7 @@
 "Settings.AIControls.HeaderCard.Link.v151" = "Més informació";
 
 /* This is the message for the Header Card under the AI Controls settings section. */
-"Settings.AIControls.HeaderCard.Message.v151" = "Això inclou si s’han d'utilitzar o no les funcions millorades amb IA.";
+"Settings.AIControls.HeaderCard.Message.v151" = "Això inclou si s’han d’utilitzar o no les funcions millorades amb IA.";
 
 /* This is the title for the Header Card under the AI Controls settings section. %@ is the app name (e.g. Firefox). */
 "Settings.AIControls.HeaderCard.Title.v151" = "Amb el %@, sempre teniu la llibertat de decidir";
@@ -212,7 +209,7 @@
 "Settings.FxA.Title.v119" = "Compte";
 
 /* This is the description for the setting that toggles Sync related notifications in the settings menu under the Notifications section. */
-"Settings.Notifications.SyncNotificationsStatus.v112" = "S'ha d'activar per a rebre pestanyes i per a notificar-vos quan inicieu la sessió en un altre dispositiu.";
+"Settings.Notifications.SyncNotificationsStatus.v112" = "S’ha d’activar per a rebre pestanyes i per a notificar-vos quan inicieu la sessió en un altre dispositiu.";
 
 /* This is the title for the setting that toggles Sync related notifications in the settings menu under the Notifications section. */
 "Settings.Notifications.SyncNotificationsTitle.v112" = "Sincronització";
@@ -287,7 +284,7 @@
 "Settings.Search.ShowSuggestions.v121" = "Mostra suggeriments de cerca";
 
 /* In the Search page of the Settings menu, the title for the Firefox Suggest settings section. */
-"Settings.Search.Suggest.AddressBarSetting.Title.v124" = "Barra d'adreces - Suggeriments del Firefox";
+"Settings.Search.Suggest.AddressBarSetting.Title.v124" = "Barra d’adreces - Suggeriments del Firefox";
 
 /* In the search page of the Settings menu, the title for the link to the SUMO Page about Firefox Suggest. */
 "Settings.Search.Suggest.LearnAboutSuggestions.v124" = "Més informació sobre els suggeriments del Firefox";
@@ -299,7 +296,7 @@
 "Settings.Search.Suggest.SearchBrowsingHistory.Title.v124" = "Cerca en l’historial de navegació";
 
 /* In the Search page of the Settings menu, the title for the setting to enable search bookmarks. */
-"Settings.Search.Suggest.SearchSearchBookmarks.Title.v124" = "Cerca en les adreces d'interès";
+"Settings.Search.Suggest.SearchSearchBookmarks.Title.v124" = "Cerca en les adreces d’interès";
 
 /* In the Search page of the Settings menu, the title for the setting to enable synced tabs. */
 "Settings.Search.Suggest.SearchSyncedTabs.Title.v124" = "Cerca en les pestanyes sincronitzades";
@@ -345,12 +342,6 @@
 
 /* This is the section title for the gestures features under the Summarize settings section. */
 "Settings.Summarize.GesturesSection.Title.v142" = "Gestos";
-
-/* The accessibility label for the language picker button in the Summarize settings. */
-"Settings.Summarize.LanguageSection.PickerButtonAccessibilityLabel.v149" = "Trieu una llengua";
-
-/* The label for the picker option to select the preferred app language for the summarizer inside the Summarize settings. The preferred app language refers to the language that the user has selected to use for the app in the app settings. */
-"Settings.Summarize.LanguageSection.PreferredAppLanguageLabel.v149" = "Llengua preferida de l’aplicació";
 
 /* The title for the language choose section for the summarizer inside the Summarize settings. */
 "Settings.Summarize.LanguageSection.Title.v149" = "Llengua";

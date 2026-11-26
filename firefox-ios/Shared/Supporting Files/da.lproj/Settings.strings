@@ -73,6 +73,12 @@
 /* In the AI Controls settings, in the AI powered features section, this is the message that describes the pages summaries feature */
 "Settings.AIControls.AIPoweredFeaturesSection.PageSummariesSection.Message.v151" = "Sider og sammenfatninger gemmes aldrig.";
 
+/* In the AI Controls settings, in the AI powered features section, this is the title that describes the page summaries feature */
+"Settings.AIControls.AIPoweredFeaturesSection.PageSummariesSection.Title.v151" = "Sammenfatning af sider";
+
+/* In the AI Controls settings, in the AI powered features section, this is the message that describes the Quick Answers feature */
+"Settings.AIControls.AIPoweredFeaturesSection.QuickAnswersSection.Message.v154" = "Din stemme, dine spørgsmål og dine svar gemmes aldrig.";
+
 /* In the AI Controls settings, this is the title for the section that describes AI-powered features. This is uppercase to match the style on iOS apps. */
 "Settings.AIControls.AIPoweredFeaturesSection.Title.v151" = "AI-DREVNE FUNKTIONER";
 
@@ -244,6 +250,9 @@
 /* Title for the `Suggestions from Search Engines` settings section in the Search page in the Settings menu. */
 "Settings.Search.EnginesSuggestions.Title.v124" = "Forslag fra søgetjenester";
 
+/* In the Search settings, this is the disclaimer underneath the Google Lens settings toggle that explains the conditions required for Google Lens to be available. */
+"Settings.Search.GoogleLens.Footnote.v153" = "Kun tilgængelig, når Google er aktiveret ovenfor og er din aktive søgetjeneste, mens du browser.";
+
 /* In the Search settings, this is the title that describes the Google Lens feature */
 "Settings.Search.GoogleLens.Title.v153" = "Google Lens";
 
@@ -319,12 +328,6 @@
 /* This is the section title for the gestures features under the Summarize settings section. */
 "Settings.Summarize.GesturesSection.Title.v142" = "Bevægelser";
 
-/* The accessibility label for the language picker button in the Summarize settings. */
-"Settings.Summarize.LanguageSection.PickerButtonAccessibilityLabel.v149" = "Vælg et sprog";
-
-/* The label for the picker option to select the preferred app language for the summarizer inside the Summarize settings. The preferred app language refers to the language that the user has selected to use for the app in the app settings. */
-"Settings.Summarize.LanguageSection.PreferredAppLanguageLabel.v149" = "Foretrukket appsprog";
-
 /* The title for the language choose section for the summarizer inside the Summarize settings. */
 "Settings.Summarize.LanguageSection.Title.v149" = "Sprog";
 
@@ -355,6 +358,9 @@
 /* In the Appearance settings menu, in the Toolbar Button section, this label indicates that selecting this will make the New Tab button appear in the middle of the navigation toolbar. */
 "Settings.Toolbar.Navigation.MiddleButton.NewTab.v145" = "Nyt faneblad";
 
+/* Footer text below the auto-translate toggle in the Translation settings screen. */
+"Settings.Translation.AutoTranslate.Footer.v151" = "Oversætter automatisk sider til dit foretrukne sprog.";
+
 /* Title for the auto-translate toggle in the Translation settings screen. */
 "Settings.Translation.AutoTranslate.Title.v151" = "Oversæt automatisk";
 
@@ -366,6 +372,12 @@
 
 /* Row label in the preferred languages list that opens the language picker to add a new preferred language for translation. */
 "Settings.Translation.PreferredLanguages.AddLanguage.v151" = "Tilføj sprog…";
+
+/* Subtitle on the device language row in the preferred languages list in the Translation settings screen. */
+"Settings.Translation.PreferredLanguages.DeviceLanguage.v151" = "Enhedens sprog";
+
+/* Footer text below the preferred languages list in the Translation settings screen. */
+"Settings.Translation.PreferredLanguages.Footer.v151" = "Vælg mellem disse sprog, når der oversættes.";
 
 /* VoiceOver custom action label on a preferred language row in the Translation settings screen, used to remove that language from the list. */
 "Settings.Translation.PreferredLanguages.RemoveLanguageA11yAction.v151" = "Slet";
@@ -384,6 +396,9 @@
 
 /* In the settings menu, in the General section, this is the title for the Translation settings section. */
 "Settings.Translation.Title.v145" = "Oversættelse";
+
+/* Footer text below the enable toggle in the Translation settings screen. */
+"Settings.Translation.ToggleFooter.v151" = "Slå dette fra for at fjerne oversættelse fra værktøjslinjen og menuen.";
 
 /* This is the title for the setting that toggles the Translation feature that allows users to translate web pages under the Translation settings section. */
 "Settings.Translation.ToggleTitle.v145" = "Aktiver oversættelser";
